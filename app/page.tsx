@@ -1,80 +1,104 @@
 import Image from "next/image";
 
+import {
+  ShieldCheck,
+  Building2,
+  Siren,
+  Users,
+  Store,
+  BellRing,
+  CheckCircle2,
+  MonitorSmartphone,
+  FileText,
+  Radar,
+  ArrowRight,
+  Phone,
+  Mail,
+  MapPin,
+  Clock3,
+} from "lucide-react";
+
 export default function Home() {
   const services = [
-    {
-      title: "Construction Site Protection",
-      desc: "Protect your sites, equipment and workforce with reliable on-site protection services.",
-    },
-    {
-      title: "Mobile Patrols",
-      desc: "Scheduled and random patrols designed to deter threats and maintain safety.",
-    },
-    {
-      title: "Static Guards",
-      desc: "Professional personnel providing access control, monitoring and site protection.",
-    },
-    {
-      title: "Event Protection",
-      desc: "Crowd management and event monitoring solutions tailored for any scale.",
-    },
-    {
-      title: "Retail Protection",
-      desc: "Reduce loss and create safer retail environments with proactive protection systems.",
-    },
-    {
-      title: "Alarm Response",
-      desc: "Rapid response solutions available around the clock for urgent incidents.",
-    },
-  ];
+  {
+    title: "Construction Site Protection",
+    desc: "Protect your sites, equipment and workforce from theft and unauthorised access.",
+    icon: Building2,
+    image: "/construction.png",
+  },
+  {
+    title: "Mobile Patrols",
+    desc: "Visible deterrence with random or scheduled patrols to keep sites secure.",
+    icon: ShieldCheck,
+    image: "/patrol.png",
+  },
+  {
+    title: "Static Guards",
+    desc: "Professional on-site guards providing access control and monitoring.",
+    icon: Users,
+    image: "/staticguards.png",
+  },
+  {
+    title: "Event Protection",
+    desc: "Crowd management and safety protection for events of any scale.",
+    icon: Siren,
+    image: "/hero-v2.webp",
+  },
+  {
+    title: "Retail Protection",
+    desc: "Reduce theft and shrinkage with proactive in-store protection.",
+    icon: Store,
+    image: "/retail.png",
+  },
+  {
+    title: "Alarm Response",
+    desc: "Fast response to alarm activations and urgent incidents 24/7.",
+    icon: BellRing,
+    image: "/alarmresponse.png",
+  },
+];
 
   return (
-    <main className="bg-white text-zinc-900 overflow-hidden">
+    <main className="bg-[#020817] text-white overflow-hidden">
 
       {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-zinc-200">
+      <nav className="sticky top-0 z-50 bg-[#020817]/80 backdrop-blur-xl border-b border-white/10">
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-24 flex items-center justify-between">
 
-          {/* LOGO */}
-          <div className="flex items-center">
+          <Image
+            src="/logo.svg"
+            alt="NexGuard"
+            width={170}
+            height={45}
+            priority
+          />
 
-  <Image
-    src="logo.svg"
-    alt="NexGuard Protection"
-    width={260}
-    height={70}
-    priority
-  />
+          <div className="hidden lg:flex items-center gap-10 text-sm font-semibold text-zinc-300">
 
-</div>
-
-          {/* MENU */}
-          <div className="hidden lg:flex items-center gap-10 text-sm font-semibold">
-
-            <a href="#" className="hover:text-blue-600 transition">
+            <a href="#" className="hover:text-cyan-400 transition">
               Home
             </a>
 
-            <a href="#services" className="hover:text-blue-600 transition">
+            <a href="#services" className="hover:text-cyan-400 transition">
               Services
             </a>
 
-            <a href="#about" className="hover:text-blue-600 transition">
+            <a href="#about" className="hover:text-cyan-400 transition">
               About Us
             </a>
 
-            <a href="#advantages" className="hover:text-blue-600 transition">
-              Advantages
+            <a href="#advantages" className="hover:text-cyan-400 transition">
+              Our Advantage
             </a>
 
-            <a href="#contact" className="hover:text-blue-600 transition">
+            <a href="#contact" className="hover:text-cyan-400 transition">
               Contact
             </a>
 
           </div>
 
-          <button className="bg-blue-600 hover:bg-blue-700 transition text-white px-7 py-3 rounded-2xl font-semibold shadow-xl shadow-blue-500/20">
+          <button className="bg-blue-600 hover:bg-blue-700 transition px-4 lg:px-7 py-3 rounded-2xl text-sm lg:text-base font-semibold shadow-2xl shadow-blue-500/30">
             Get A Quote
           </button>
 
@@ -83,71 +107,119 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="relative h-[720px] overflow-hidden rounded-[32px] mx-6 lg:mx-10 mt-6">
+      <section className="relative min-h-[90vh] overflow-hidden">
 
-  <Image
-    src="/hero-image.webp"
-    alt="NexGuard Protection"
-    fill
-    className="object-cover"
-    priority
-  />
+        <Image
+          src="/hero-v2.webp"
+          alt="Security"
+          fill
+          priority
+          className="object-cover"
+        />
 
-  <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-transparent" />
+        <div className="absolute inset-0 bg-black/70" />
 
-  <div className="absolute inset-0 flex items-center">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.2),transparent_45%)]" />
 
-    <div className="max-w-2xl px-10 lg:px-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-28 pb-20">
 
-      <p className="text-blue-600 font-semibold tracking-[0.3em] uppercase mb-6">
-        Premium Protection Services
-      </p>
+          <div className="max-w-3xl">
 
-      <h1 className="text-6xl lg:text-7xl font-black leading-[0.95] text-zinc-900 mb-8">
-        Professional Protection
-        <br />
-        For Modern Businesses
-      </h1>
+            <p className="uppercase tracking-[0.35em] text-cyan-400 font-bold mb-6">
+              Elite Protection Services
+            </p>
 
-      <p className="text-xl text-zinc-600 leading-relaxed mb-10">
-        Reliable protection solutions for construction sites,
-        commercial properties, events and retail environments.
-      </p>
+            <h1 className="text-5xl md:text-7xl font-black leading-[0.95] mb-8 uppercase">
 
-      <div className="flex gap-5">
+              Elite Security
+              <br />
 
-        <button className="bg-blue-600 hover:bg-blue-700 transition text-white px-8 py-4 rounded-2xl font-semibold shadow-xl">
-          Get A Quote
-        </button>
+              <span className="text-blue-500">
+                Guards.
+              </span>
 
-        <button className="border border-zinc-300 bg-white/80 backdrop-blur-md hover:border-zinc-500 transition px-8 py-4 rounded-2xl font-semibold">
-          Learn More
-        </button>
+              <br />
 
-      </div>
+              Zero Compromise.
 
-    </div>
+            </h1>
 
-  </div>
+            <p className="text-zinc-300 text-lg leading-relaxed max-w-2xl mb-10">
+              NexGuard Protection provides licensed, professional protection
+              guards for construction sites, events, retail and businesses.
+            </p>
 
-</section>
+            <div className="flex flex-wrap gap-5">
+
+              <button className="bg-blue-600 hover:bg-blue-700 transition px-8 py-5 rounded-2xl font-semibold flex items-center gap-3">
+
+                Get A Quote
+
+                <ArrowRight className="w-5 h-5" />
+
+              </button>
+
+              <button className="border border-white/15 bg-white/5 hover:bg-white/10 transition px-8 py-5 rounded-2xl font-semibold">
+                Call Now — 24/7
+              </button>
+
+            </div>
+
+          </div>
+
+          {/* FEATURE BAR */}
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-5 mt-20">
+
+            {[
+              "Fully Licensed",
+              "Police Checked",
+              "Fully Insured",
+              "24/7 Service",
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-3xl p-6 flex items-center gap-4"
+              >
+
+                <ShieldCheck className="w-8 h-8 text-cyan-400" />
+
+                <div>
+
+                  <p className="font-bold">
+                    {item}
+                  </p>
+
+                  <p className="text-sm text-zinc-400">
+                    Professional Protection
+                  </p>
+
+                </div>
+
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
 
       {/* SERVICES */}
       <section
         id="services"
-        className="py-28 bg-zinc-50 border-t border-zinc-200"
+        className="py-28 bg-[#050B1A]"
       >
 
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
           <div className="text-center max-w-3xl mx-auto">
 
-            <p className="uppercase tracking-[0.35em] text-blue-600 font-bold text-sm mb-5">
+            <p className="uppercase tracking-[0.35em] text-cyan-400 font-bold text-sm mb-5">
               Our Services
             </p>
 
-            <h2 className="text-4xl md:text-6xl font-black leading-tight">
-              Protection Solutions That Keep Businesses Moving
+            <h2 className="text-4xl md:text-6xl font-black leading-tight uppercase">
+              Protection Solutions That Protect What Matters
             </h2>
 
           </div>
@@ -157,22 +229,37 @@ export default function Home() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white border border-zinc-200 rounded-[32px] p-8 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl"
+                className="bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-[32px] overflow-hidden hover:-translate-y-2 transition-all duration-500 hover:border-cyan-500/40"
               >
 
-                <div className="w-16 h-16 rounded-2xl bg-blue-100 mb-8 flex items-center justify-center">
+                <div className="h-52 relative">
 
-                  <div className="w-7 h-7 rounded-lg bg-blue-600" />
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                  />
 
                 </div>
 
-                <h3 className="text-2xl font-black mb-4 leading-tight">
-                  {service.title}
-                </h3>
+                <div className="p-8">
 
-                <p className="text-zinc-600 leading-relaxed">
-                  {service.desc}
-                </p>
+                  <div className="w-16 h-16 rounded-2xl bg-blue-600/10 border border-blue-500/20 mb-8 flex items-center justify-center">
+
+                    <service.icon className="w-8 h-8 text-blue-500" />
+
+                  </div>
+
+                  <h3 className="text-2xl font-black mb-4 uppercase">
+                    {service.title}
+                  </h3>
+
+                  <p className="text-zinc-400 leading-relaxed">
+                    {service.desc}
+                  </p>
+
+                </div>
 
               </div>
             ))}
@@ -193,36 +280,32 @@ export default function Home() {
 
           <div>
 
-            <p className="uppercase tracking-[0.35em] text-blue-600 font-bold text-sm mb-5">
-              Why NexGuard
+            <p className="uppercase tracking-[0.35em] text-cyan-400 font-bold text-sm mb-5">
+              Why Choose NexGuard
             </p>
 
-            <h2 className="text-4xl md:text-6xl font-black leading-tight">
+            <h2 className="text-4xl md:text-6xl font-black leading-tight uppercase">
 
-              Reliable.
+              Your Safety.
               <br />
 
-              Smart.
-              <br />
-
-              <span className="text-blue-600">
-                Responsive.
+              <span className="text-blue-500">
+                Our Priority.
               </span>
 
             </h2>
 
-            <p className="text-zinc-600 text-lg leading-relaxed mt-8">
-              We combine trained professionals with modern reporting,
-              monitoring and rapid-response systems to create dependable
-              protection experiences for every client.
+            <p className="text-zinc-400 text-lg leading-relaxed mt-8">
+              We combine professional guards with smart systems to deliver
+              reliable, accountable and proactive protection.
             </p>
 
             <div className="space-y-5 mt-10">
 
               {[
-                "Highly Trained Personnel",
-                "Rapid Incident Response",
-                "GPS Monitoring Systems",
+                "Highly Trained Guards",
+                "GPS Tracking & Reporting",
+                "Real-Time Incident Updates",
                 "Tailored Protection Plans",
                 "24/7 Operational Support",
               ].map((item, index) => (
@@ -231,7 +314,7 @@ export default function Home() {
                   className="flex items-center gap-4"
                 >
 
-                  <div className="w-6 h-6 rounded-full bg-blue-600" />
+                  <CheckCircle2 className="w-6 h-6 text-cyan-400" />
 
                   <p className="font-medium text-lg">
                     {item}
@@ -247,28 +330,36 @@ export default function Home() {
           <div className="grid gap-6">
 
             {[
-              "Real-Time Tracking",
-              "Digital Reporting",
-              "Client Dashboard",
+              {
+                title: "Live Guard Tracking",
+                icon: Radar,
+              },
+              {
+                title: "Instant Reports",
+                icon: FileText,
+              },
+              {
+                title: "Client Portal",
+                icon: MonitorSmartphone,
+              },
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-zinc-50 border border-zinc-200 rounded-[32px] p-10"
+                className="bg-white/[0.03] border border-white/10 rounded-[32px] p-10"
               >
 
-                <div className="w-16 h-16 rounded-2xl bg-blue-100 mb-6 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 mb-6 flex items-center justify-center">
 
-                  <div className="w-7 h-7 rounded-lg bg-blue-600" />
+                  <item.icon className="w-8 h-8 text-cyan-400" />
 
                 </div>
 
-                <h3 className="text-3xl font-black mb-4">
-                  {item}
+                <h3 className="text-3xl font-black mb-4 uppercase">
+                  {item.title}
                 </h3>
 
-                <p className="text-zinc-600 leading-relaxed">
-                  Modern systems designed for visibility, accountability and
-                  operational efficiency.
+                <p className="text-zinc-400 leading-relaxed">
+                  Modern systems designed for visibility and operational efficiency.
                 </p>
 
               </div>
@@ -281,26 +372,30 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-24">
+      <section className="pt-10">
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="w-full">
 
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-[40px] p-14 md:p-20 text-white flex flex-col lg:flex-row items-center justify-between gap-10 shadow-2xl shadow-blue-500/20">
+          <div className="bg-gradient-to-r from-blue-700 to-cyan-600 px-8 lg:px-20 py-20 flex flex-col lg:flex-row items-center justify-between gap-10">
 
             <div>
 
-              <h2 className="text-4xl md:text-5xl font-black leading-tight">
-                Need Professional Protection Services?
+              <h2 className="text-4xl md:text-5xl font-black leading-tight uppercase">
+                Need Reliable Protection For Your Business?
               </h2>
 
               <p className="text-blue-100 text-lg mt-5">
-                Fast response. Reliable professionals. Trusted solutions.
+                Fast response. Reliable guards. Trusted protection.
               </p>
 
             </div>
 
-            <button className="bg-white text-blue-700 hover:bg-zinc-100 transition px-8 py-5 rounded-2xl font-bold whitespace-nowrap">
+            <button className="bg-white text-blue-700 hover:bg-zinc-100 transition px-8 py-5 rounded-2xl font-bold whitespace-nowrap flex items-center gap-3">
+
               Request A Quote
+
+              <ArrowRight className="w-5 h-5" />
+
             </button>
 
           </div>
@@ -312,38 +407,33 @@ export default function Home() {
       {/* FOOTER */}
       <footer
         id="contact"
-        className="border-t border-zinc-200 py-16"
+        className="border-t border-white/10 py-20 bg-[#030712]"
       >
 
         <div className="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-4 gap-14">
 
           <div>
 
-            <div className="mb-6">
+            <Image
+              src="/logo.svg"
+              alt="NexGuard"
+              width={220}
+              height={60}
+            />
 
-  <Image
-    src="logo.svg"
-    alt="NexGuard Protection"
-    width={220}
-    height={60}
-  />
-
-</div>
-
-            <p className="text-zinc-600 leading-relaxed">
-              Professional protection solutions designed for businesses,
-              construction sites, events and commercial environments.
+            <p className="text-zinc-400 leading-relaxed mt-6">
+              Professional protection solutions for businesses, construction sites and events.
             </p>
 
           </div>
 
           <div>
 
-            <h4 className="font-black text-lg mb-5">
+            <h4 className="font-black text-lg mb-5 uppercase">
               Quick Links
             </h4>
 
-            <div className="space-y-3 text-zinc-600">
+            <div className="space-y-3 text-zinc-400">
 
               <p>Home</p>
               <p>Services</p>
@@ -356,11 +446,11 @@ export default function Home() {
 
           <div>
 
-            <h4 className="font-black text-lg mb-5">
+            <h4 className="font-black text-lg mb-5 uppercase">
               Services
             </h4>
 
-            <div className="space-y-3 text-zinc-600">
+            <div className="space-y-3 text-zinc-400">
 
               <p>Construction Protection</p>
               <p>Mobile Patrols</p>
@@ -373,16 +463,31 @@ export default function Home() {
 
           <div>
 
-            <h4 className="font-black text-lg mb-5">
+            <h4 className="font-black text-lg mb-5 uppercase">
               Contact
             </h4>
 
-            <div className="space-y-3 text-zinc-600">
+            <div className="space-y-4 text-zinc-400">
 
-              <p>1300 123 456</p>
-              <p>info@nexguard.com.au</p>
-              <p>Perth WA 6000</p>
-              <p>24/7 Availability</p>
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-cyan-400" />
+                <p>1300 123 456</p>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-cyan-400" />
+                <p>info@nexguard.com.au</p>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <MapPin className="w-5 h-5 text-cyan-400" />
+                <p>Perth WA 6000</p>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <Clock3 className="w-5 h-5 text-cyan-400" />
+                <p>24/7 Availability</p>
+              </div>
 
             </div>
 
