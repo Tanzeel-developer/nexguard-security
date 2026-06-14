@@ -120,10 +120,11 @@ export default function HomePage() {
 
       {/* NAVBAR */}
       <nav className="sticky top-0 z-50 bg-white/90 dark:bg-[#020817]/90 backdrop-blur-xl border-b border-slate-200 dark:border-white/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between relative">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between relative">
 
-          <div className="bg-[#020817] dark:bg-transparent rounded-lg px-3 py-1.5 dark:px-0 dark:py-0">
-            <Image src="/logo.svg" alt="NexGuard Protection" width={150} height={40} priority />
+          <div>
+            <Image src="/logo-light.svg" alt="NexGuard Protection" width={150} height={40} priority className="block dark:hidden" />
+            <Image src="/logo-dark.svg" alt="NexGuard Protection" width={150} height={40} priority className="hidden dark:block" />
           </div>
 
           <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-zinc-300">
@@ -149,12 +150,12 @@ export default function HomePage() {
       </nav>
 
       {/* HERO */}
-      <section className="relative min-h-[90vh] overflow-hidden">
-        <Image src="/hero-v2.webp" alt="NexGuard Protection Perth Security" fill priority className="object-cover" />
+      <section className="relative min-h-[calc(100vh-64px)] overflow-hidden">
+        <Image src="/hero-v3.webp" alt="NexGuard Protection Perth Security" fill priority className="object-cover" />
         <div className="absolute inset-0 bg-black/65" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(37,99,235,0.18),transparent_55%)]" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-24">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-10">
           <div className="max-w-2xl">
 
             <p className="tracking-widest text-cyan-400 font-medium text-sm mb-5 uppercase">
@@ -439,8 +440,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-4 gap-12">
 
           <div>
-            <div className="bg-[#020817] dark:bg-transparent rounded-lg px-3 py-2 dark:px-0 dark:py-0 inline-block">
-              <Image src="/logo.svg" alt="NexGuard Protection" width={140} height={38} />
+            <div className="inline-block">
+              <Image src="/logo-light.svg" alt="NexGuard Protection" width={140} height={38} className="block dark:hidden" />
+              <Image src="/logo-dark.svg" alt="NexGuard Protection" width={140} height={38} className="hidden dark:block" />
             </div>
             <p className="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed mt-5">
               Perth&apos;s trusted security partner. Fully licensed, police checked and insured security services across Western Australia.
