@@ -367,34 +367,89 @@ export default function Home() {
 
       </section>
 
-      {/* CTA */}
-      <section className="pt-10">
+      {/* CONTACT FORM */}
+      <section id="contact-form" className="py-28 bg-[#050B1A]">
 
-        <div className="w-full">
+        <div className="max-w-4xl mx-auto px-6 lg:px-10">
 
-          <div className="bg-gradient-to-r from-blue-700 to-cyan-600 px-8 lg:px-20 py-20 flex flex-col lg:flex-row items-center justify-between gap-10">
+          <div className="text-center mb-14">
 
-            <div>
+            <p className="uppercase tracking-[0.35em] text-cyan-400 font-bold text-sm mb-5">
+              Get In Touch
+            </p>
 
-              <h2 className="text-4xl md:text-5xl font-black leading-tight uppercase">
-                Need Reliable Protection For Your Business?
-              </h2>
+            <h2 className="text-4xl md:text-6xl font-black leading-tight uppercase">
+              Contact Us
+            </h2>
 
-              <p className="text-blue-100 text-lg mt-5">
-                Fast response. Reliable guards. Trusted protection.
-              </p>
-
-            </div>
-
-            <button className="bg-white text-blue-700 hover:bg-zinc-100 transition px-8 py-5 rounded-2xl font-bold whitespace-nowrap flex items-center gap-3">
-
-              Request A Quote
-
-              <ArrowRight className="w-5 h-5" />
-
-            </button>
+            <p className="text-zinc-400 text-lg mt-5">
+              Fill out the form below and our team will get back to you shortly.
+            </p>
 
           </div>
+
+          <form className="bg-white/[0.03] border border-white/10 rounded-[32px] p-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-semibold text-zinc-300">Full Name</label>
+              <input
+                type="text"
+                placeholder="John Smith"
+                className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white placeholder-zinc-500 focus:outline-none focus:border-cyan-500 transition"
+              />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-semibold text-zinc-300">Email Address</label>
+              <input
+                type="email"
+                placeholder="john@example.com"
+                className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white placeholder-zinc-500 focus:outline-none focus:border-cyan-500 transition"
+              />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-semibold text-zinc-300">Phone Number</label>
+              <input
+                type="tel"
+                placeholder="+61 000 000 000"
+                className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white placeholder-zinc-500 focus:outline-none focus:border-cyan-500 transition"
+              />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-semibold text-zinc-300">Service Required</label>
+              <select className="bg-[#0a1628] border border-white/10 rounded-xl px-5 py-4 text-zinc-300 focus:outline-none focus:border-cyan-500 transition">
+                <option value="">Select a service...</option>
+                <option value="construction">Construction Site Security</option>
+                <option value="patrols">Mobile Patrols</option>
+                <option value="static">Static Guards</option>
+                <option value="events">Event Protection</option>
+                <option value="retail">Retail Security</option>
+                <option value="parties">Private Parties</option>
+              </select>
+            </div>
+
+            <div className="flex flex-col gap-2 md:col-span-2">
+              <label className="text-sm font-semibold text-zinc-300">Message</label>
+              <textarea
+                rows={5}
+                placeholder="Tell us about your security needs..."
+                className="bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white placeholder-zinc-500 focus:outline-none focus:border-cyan-500 transition resize-none"
+              />
+            </div>
+
+            <div className="md:col-span-2">
+              <button
+                type="submit"
+                className="w-full bg-blue-600 hover:bg-blue-700 transition px-8 py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3"
+              >
+                Send Message
+                <ArrowRight className="w-5 h-5" />
+              </button>
+            </div>
+
+          </form>
 
         </div>
 
@@ -467,12 +522,12 @@ export default function Home() {
 
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-cyan-400" />
-                <p>1300 123 456</p>
+                <p>+61 491 215 175</p>
               </div>
 
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-cyan-400" />
-                <p>info@nexguard.com.au</p>
+                <p>Info@nexguard.au</p>
               </div>
 
               <div className="flex items-center gap-3">
