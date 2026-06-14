@@ -17,6 +17,10 @@ const libreBaskerville = Libre_Baskerville({
 export const metadata: Metadata = {
   title: "NexGuard Protection",
   description: "Professional security services across Western Australia",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
