@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Tell Tailwind v4 to use .dark class strategy (required for next-themes) */
+@variant dark (&:where(.dark, .dark *));
+
 body {
   font-family: var(--font-inter), system-ui, sans-serif;
 }

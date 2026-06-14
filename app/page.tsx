@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ThemeToggle } from "./components/ThemeToggle";
+import { MobileMenu } from "./components/MobileMenu";
 
 import {
   ShieldCheck,
@@ -64,20 +65,17 @@ export default function Home() {
 
       {/* NAVBAR */}
       <nav className="sticky top-0 z-50 bg-white/90 dark:bg-[#020817]/90 backdrop-blur-xl border-b border-slate-200 dark:border-white/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between relative">
 
-          <Image
-            src="/logo.svg"
-            alt="NexGuard"
-            width={150}
-            height={40}
-            priority
-          />
+          {/* Logo — dark pill in light mode keeps white logo visible */}
+          <div className="bg-[#020817] dark:bg-transparent rounded-lg px-3 py-1.5 dark:px-0 dark:py-0">
+            <Image src="/logo.svg" alt="NexGuard" width={150} height={40} priority />
+          </div>
 
           <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-zinc-300">
             <a href="#" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Home</a>
             <a href="#services" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Services</a>
-            <a href="#about" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">About Us</a>
+            <a href="#advantages" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">About Us</a>
             <a href="#advantages" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Our Advantage</a>
             <a href="#contact-form" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Contact</a>
           </div>
@@ -86,10 +84,11 @@ export default function Home() {
             <ThemeToggle />
             <a
               href="#contact-form"
-              className="bg-blue-600 hover:bg-blue-700 text-white transition-colors px-5 py-2.5 rounded-lg text-sm font-semibold"
+              className="hidden lg:inline-flex bg-blue-600 hover:bg-blue-700 text-white transition-colors px-5 py-2.5 rounded-lg text-sm font-semibold"
             >
               Get a Quote
             </a>
+            <MobileMenu />
           </div>
 
         </div>
