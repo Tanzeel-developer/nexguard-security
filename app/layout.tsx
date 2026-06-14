@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "NexGuard Protection",
   description: "Professional security services across Western Australia",
   icons: {
-    icon: "/favicon.png",
+    icon: [{ url: "/favicon.png", type: "image/png" }],
     apple: "/favicon.png",
   },
 };
