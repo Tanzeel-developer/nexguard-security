@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { MobileMenu } from "./components/MobileMenu";
+import { ContactForm } from "./components/ContactForm";
 
 import {
   ShieldCheck,
@@ -440,59 +441,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <form className="bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 rounded-2xl p-8 grid grid-cols-1 md:grid-cols-2 gap-5">
-
-            <div className="flex flex-col gap-1.5">
-              <label className="text-sm font-medium text-slate-700 dark:text-zinc-300">Full Name</label>
-              <input type="text" placeholder="John Smith"
-                className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-blue-500 dark:focus:border-cyan-500 transition-colors" />
-            </div>
-
-            <div className="flex flex-col gap-1.5">
-              <label className="text-sm font-medium text-slate-700 dark:text-zinc-300">Email Address</label>
-              <input type="email" placeholder="john@example.com"
-                className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-blue-500 dark:focus:border-cyan-500 transition-colors" />
-            </div>
-
-            <div className="flex flex-col gap-1.5">
-              <label className="text-sm font-medium text-slate-700 dark:text-zinc-300">Phone Number</label>
-              <input type="tel" placeholder="+61 000 000 000"
-                className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-blue-500 dark:focus:border-cyan-500 transition-colors" />
-            </div>
-
-            <div className="flex flex-col gap-1.5">
-              <label className="text-sm font-medium text-slate-700 dark:text-zinc-300">Service Required</label>
-              <select className="bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm text-slate-700 dark:text-zinc-300 focus:outline-none focus:border-blue-500 dark:focus:border-cyan-500 transition-colors">
-                <option value="">Select a service...</option>
-                <option value="construction">Construction Site Security</option>
-                <option value="patrols">Mobile Patrols</option>
-                <option value="static">Static Guards</option>
-                <option value="events">Event Security & Crowd Control</option>
-                <option value="retail">Retail Security & Loss Prevention</option>
-                <option value="alarm">Alarm Response</option>
-                <option value="concierge">Concierge & Corporate Security</option>
-                <option value="parties">Private Parties & Functions</option>
-              </select>
-            </div>
-
-            <div className="flex flex-col gap-1.5 md:col-span-2">
-              <label className="text-sm font-medium text-slate-700 dark:text-zinc-300">Message</label>
-              <textarea rows={5} placeholder="Tell us about your security needs, location and any specific requirements..."
-                className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-blue-500 dark:focus:border-cyan-500 transition-colors resize-none" />
-            </div>
-
-            <div className="md:col-span-2">
-              <button type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white transition-colors px-8 py-3.5 rounded-lg font-semibold flex items-center justify-center gap-2">
-                Send Message
-                <ArrowRight className="w-4 h-4" />
-              </button>
-              <p className="text-xs text-center text-slate-400 dark:text-zinc-500 mt-3">
-                We respond within 2 hours. Available 24/7 for urgent enquiries.
-              </p>
-            </div>
-
-          </form>
+          <ContactForm />
 
         </div>
       </section>
