@@ -59,7 +59,7 @@ export default function Home() {
 ];
 
   return (
-    <main className="bg-[#020817] text-white overflow-hidden">
+    <main className="bg-[#020817] text-white">
 
       {/* NAVBAR */}
       <nav className="sticky top-0 z-50 bg-[#020817]/80 backdrop-blur-xl border-b border-white/10">
