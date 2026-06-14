@@ -32,13 +32,13 @@ export default function HomePage() {
       title: "Construction Site Security",
       desc: "Protect your sites, equipment and workforce from theft and unauthorised access.",
       icon: Building2,
-      image: "/construction.png",
+      image: "/Construction Site Security.jpeg",
     },
     {
       title: "Mobile Patrols",
       desc: "Visible deterrence with random or scheduled patrols to keep your property secure around the clock.",
       icon: ShieldCheck,
-      image: "/patrol.png",
+      image: "/Mobile Patrols.jpeg",
     },
     {
       title: "Static Guards",
@@ -50,13 +50,13 @@ export default function HomePage() {
       title: "Event Security & Crowd Control",
       desc: "Crowd management, access control and safety planning for events of any scale across Perth.",
       icon: Siren,
-      image: "/hero-v2.webp",
+      image: "/Event Security & Crowd Control.jpeg",
     },
     {
       title: "Retail Security & Loss Prevention",
       desc: "Reduce theft and shrinkage with proactive in-store protection and loss prevention strategies.",
       icon: Store,
-      image: "/retail.png",
+      image: "/Retail Security & Loss Prevention.jpeg",
     },
     {
       title: "Alarm Response",
@@ -68,13 +68,13 @@ export default function HomePage() {
       title: "Concierge & Corporate Security",
       desc: "Professional front-of-house security for office buildings, hotels, strata and corporate campuses.",
       icon: Briefcase,
-      image: "/staticguards.png",
+      image: "/Concierge & Corporate Security.jpeg",
     },
     {
       title: "Private Parties & Functions",
       desc: "Experienced security personnel for private events, parties and social gatherings of any size.",
       icon: PartyPopper,
-      image: "/alarmresponse.png",
+      image: "/Private Parties & Functions.jpeg",
     },
   ];
 
