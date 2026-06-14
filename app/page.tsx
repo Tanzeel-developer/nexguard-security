@@ -21,7 +21,7 @@ import {
 export default function Home() {
   const services = [
   {
-    title: "Construction Site Protection",
+    title: "Construction Site Security",
     desc: "Protect your sites, equipment and workforce from theft and unauthorised access.",
     icon: Building2,
     image: "/construction.png",
@@ -45,14 +45,14 @@ export default function Home() {
     image: "/hero-v2.webp",
   },
   {
-    title: "Retail Protection",
+    title: "Retail Security",
     desc: "Reduce theft and shrinkage with proactive in-store protection.",
     icon: Store,
     image: "/retail.png",
   },
   {
-    title: "Alarm Response",
-    desc: "Fast response to alarm activations and urgent incidents 24/7.",
+    title: "Private Parties",
+    desc: "Professional security for private events, parties and gatherings of any size.",
     icon: BellRing,
     image: "/alarmresponse.png",
   },
@@ -126,27 +126,23 @@ export default function Home() {
           <div className="max-w-3xl">
 
             <p className="uppercase tracking-[0.35em] text-cyan-400 font-bold mb-6">
-              Elite Protection Services
+              Reliable Security. Trusted Service.
             </p>
 
             <h1 className="text-5xl md:text-7xl font-black leading-[0.95] mb-8 uppercase">
 
-              Elite Security
+              Securing Whats
+
               <br />
 
               <span className="text-blue-500">
-                Guards.
+                Next.
               </span>
-
-              <br />
-
-              Zero Compromise.
 
             </h1>
 
             <p className="text-zinc-300 text-lg leading-relaxed max-w-2xl mb-10">
-              NexGuard Protection provides licensed, professional protection
-              guards for construction sites, events, retail and businesses.
+              Nexguard Protection is a Western Australia-based, fully licensed security company delivering professional security services across WA. From retail and commercial properties to construction sites and events, we provide dependable security solutions backed by professionalism, integrity, and a commitment to keeping people and assets secure.
             </p>
 
             <div className="flex flex-wrap gap-5">
@@ -219,7 +215,7 @@ export default function Home() {
             </p>
 
             <h2 className="text-4xl md:text-6xl font-black leading-tight uppercase">
-              Protection Solutions That Protect What Matters
+              Security Solutions That Protect What Matters
             </h2>
 
           </div>
