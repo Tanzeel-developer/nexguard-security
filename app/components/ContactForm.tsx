@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ArrowRight, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 
-const FORMSPREE_ID = "REPLACE_WITH_YOUR_ID"; // e.g. "xpzgkwqr"
+const FORMSPREE_ID = "mjgdjwkg";
 
 type Status = "idle" | "loading" | "success" | "error";
 
