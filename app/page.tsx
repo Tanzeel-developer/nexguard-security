@@ -13,9 +13,6 @@ import {
   BellRing,
   Briefcase,
   CheckCircle2,
-  MonitorSmartphone,
-  FileText,
-  Radar,
   ArrowRight,
   Phone,
   Mail,
@@ -308,9 +305,9 @@ export default function HomePage() {
 
       {/* ADVANTAGES */}
       <section id="advantages" className="py-24 bg-slate-50 dark:bg-[#050B1A]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-          <div>
+          <div className="text-center max-w-2xl mx-auto mb-14">
             <p className="tracking-widest text-blue-600 dark:text-cyan-400 font-medium text-xs uppercase mb-4">
               Why Choose NexGuard
             </p>
@@ -318,40 +315,31 @@ export default function HomePage() {
               Your Safety.{" "}
               <span className="text-blue-600 dark:text-blue-400">Our Priority.</span>
             </h2>
-            <p className="text-slate-500 dark:text-zinc-400 text-base leading-relaxed mt-6">
+            <p className="text-slate-500 dark:text-zinc-400 text-base mt-4">
               We are a Perth-based, locally owned and operated security company. Unlike large national
               chains, we give every client direct access to our management team, tailored security plans
               and rapid response — every time.
             </p>
-            <div className="space-y-4 mt-8">
-              {[
-                "Fully Licensed WA Security Professionals",
-                "GPS Tracked Guards & Real-Time Reporting",
-                "Tailored Security Plans for Every Client",
-                "Rapid Response — No Delays, No Excuses",
-                "24/7 Operational Support & Communication",
-                "Perth-Based Team with Local Knowledge",
-              ].map((item, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-cyan-400 shrink-0" />
-                  <p className="font-medium text-slate-700 dark:text-zinc-200 text-sm">{item}</p>
-                </div>
-              ))}
-            </div>
           </div>
 
-          <div className="grid gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: "Live Guard Tracking", icon: Radar, desc: "Real-time GPS visibility over all active guards and patrol routes so you always know what's happening." },
-              { title: "Instant Incident Reports", icon: FileText, desc: "Automated reports delivered immediately after any incident — full transparency, every time." },
-              { title: "Client Dashboard", icon: MonitorSmartphone, desc: "Access guard logs, incident reports and patrol activity from any device, at any time." },
+              { title: "Fully Licensed WA Security Professionals", desc: "Every guard holds a current WA security licence — fully compliant and legally authorised." },
+              { title: "GPS Tracked Guards & Real-Time Reporting", desc: "Live tracking of all active guards with instant digital reports after every shift or incident." },
+              { title: "Tailored Security Plans for Every Client", desc: "No one-size-fits-all. We assess your site and build a plan around your specific needs." },
+              { title: "Rapid Response — No Delays, No Excuses", desc: "We respond fast. When you call, we act — day or night, weekdays or weekends." },
+              { title: "24/7 Operational Support & Communication", desc: "Our operations team is always reachable, keeping you informed around the clock." },
+              { title: "Perth-Based Team with Local Knowledge", desc: "We know Perth. Our local expertise means smarter security decisions for your area." },
             ].map((item, index) => (
-              <div key={index} className="bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 rounded-2xl p-6 flex items-start gap-5">
-                <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-cyan-500/10 border border-blue-100 dark:border-cyan-500/20 flex items-center justify-center shrink-0">
-                  <item.icon className="w-6 h-6 text-blue-600 dark:text-cyan-400" />
+              <div
+                key={index}
+                className="bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 rounded-2xl p-6 flex items-start gap-4 hover:border-blue-300 dark:hover:border-cyan-500/30 hover:shadow-md transition-all duration-300"
+              >
+                <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-600/10 border border-blue-100 dark:border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-cyan-400" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-slate-900 dark:text-white mb-1">{item.title}</h3>
+                  <h3 className="font-bold text-slate-900 dark:text-white text-sm mb-1.5">{item.title}</h3>
                   <p className="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
