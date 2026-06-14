@@ -168,10 +168,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-slate-300 text-base leading-relaxed mb-10">
-              NexGuard Protection is a fully licensed, Perth-based security company delivering
-              professional security services across Western Australia. From construction sites and
-              retail stores to corporate events and private functions — we protect what matters most
-              with professionalism, integrity and rapid response.
+              The best security isn&apos;t what reacts, it&apos;s what prevents. NexGuard Protection delivers experienced, professional security guards across Western Australia, protecting businesses, people and assets with professionalism, integrity and unmatched reliability.
             </p>
 
             <div className="flex flex-wrap gap-4">
