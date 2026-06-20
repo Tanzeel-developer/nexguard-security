@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "SecurityService",
+  "@type": "LocalBusiness",
   name: "Nexguard Protection Security",
   alternateName: "NexGuard Protection",
   description:
