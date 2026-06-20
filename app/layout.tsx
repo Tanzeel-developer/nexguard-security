@@ -14,12 +14,33 @@ const libreBaskerville = Libre_Baskerville({
   weight: ["400", "700"],
 });
 
+const siteUrl = "https://www.nexguard.au";
+const siteTitle = "Nexguard Protection Security - Perth";
+const siteDescription =
+  "Nexguard Protection Security provides professional security guards service across Perth and Western Australia, including construction sites, retail, events and corporate security.";
+
 export const metadata: Metadata = {
-  title: "Nexguard Protection Security - Perth",
-  description: "Nexguard Protection Security provides professional security guards service across Perth and Western Australia, including construction sites, retail, events and corporate security.",
+  metadataBase: new URL(siteUrl),
+  title: siteTitle,
+  description: siteDescription,
   icons: {
     icon: [{ url: "/favicon.png", type: "image/png" }],
     apple: "/favicon.png",
+  },
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: siteUrl,
+    siteName: siteTitle,
+    images: [{ url: "/hero-v3.webp", width: 1200, height: 630, alt: siteTitle }],
+    locale: "en_AU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/hero-v3.webp"],
   },
 };
 
@@ -79,6 +100,12 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg"
+        >
+          Skip to main content
+        </a>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

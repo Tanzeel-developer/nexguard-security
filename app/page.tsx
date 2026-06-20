@@ -44,7 +44,7 @@ export default function HomePage() {
       title: "Static Guards",
       desc: "Professional on-site guards providing access control, monitoring and a visible security presence.",
       icon: Users,
-      image: "/staticguards.png",
+      image: "/staticguards.jpg",
     },
     {
       title: "Event Security & Crowd Control",
@@ -62,7 +62,7 @@ export default function HomePage() {
       title: "Alarm Response",
       desc: "Fast 24/7 response to alarm activations and urgent security incidents across the Perth metro area.",
       icon: BellRing,
-      image: "/alarmresponse.png",
+      image: "/alarmresponse.jpg",
     },
     {
       title: "Concierge & Corporate Security",
@@ -116,7 +116,7 @@ export default function HomePage() {
   ];
 
   return (
-    <main className="bg-white dark:bg-[#020817] text-slate-900 dark:text-white">
+    <main id="main-content" className="bg-white dark:bg-[#020817] text-slate-900 dark:text-white">
 
       {/* NAVBAR */}
       <nav className="sticky top-0 z-50 bg-white/90 dark:bg-[#020817]/90 backdrop-blur-xl border-b border-slate-200 dark:border-white/10">
@@ -128,7 +128,7 @@ export default function HomePage() {
           </div>
 
           <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-zinc-300">
-            <a href="#" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Home</a>
+            <a href="/" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Home</a>
             <a href="#services" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Services</a>
             <a href="#industries" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Industries</a>
             <a href="#advantages" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Why Us</a>
@@ -151,7 +151,7 @@ export default function HomePage() {
 
       {/* HERO */}
       <section className="relative min-h-[calc(100vh-64px)] overflow-hidden">
-        <Image src="/hero-v3.webp" alt="NexGuard Protection Perth Security" fill priority className="object-cover" />
+        <Image src="/hero-v3.webp" alt="NexGuard Protection Perth Security" fill priority sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-black/65" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(37,99,235,0.18),transparent_55%)]" />
 
@@ -246,7 +246,13 @@ export default function HomePage() {
                 className="bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 rounded-2xl overflow-hidden hover:-translate-y-1 transition-all duration-300 hover:shadow-lg dark:hover:border-cyan-500/30 hover:border-blue-200"
               >
                 <div className="h-44 relative">
-                  <Image src={service.image} alt={service.title} fill className="object-cover" />
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-5">
                   <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-600/10 border border-blue-100 dark:border-blue-500/20 mb-4 flex items-center justify-center">
@@ -449,7 +455,7 @@ export default function HomePage() {
           <div>
             <h4 className="font-bold text-slate-900 dark:text-white text-sm mb-4">Quick Links</h4>
             <div className="space-y-2.5 text-sm text-slate-500 dark:text-zinc-400">
-              <p><a href="#" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Home</a></p>
+              <p><a href="/" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Home</a></p>
               <p><a href="#services" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Services</a></p>
               <p><a href="#industries" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Industries</a></p>
               <p><a href="#advantages" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Why NexGuard</a></p>
