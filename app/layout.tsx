@@ -15,8 +15,8 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "NexGuard Protection",
-  description: "Professional security services across Western Australia",
+  title: "Nexguard Protection Security - Perth",
+  description: "Nexguard Protection Security provides professional security guards service across Perth and Western Australia, including construction sites, retail, events and corporate security.",
   icons: {
     icon: [{ url: "/favicon.png", type: "image/png" }],
     apple: "/favicon.png",
