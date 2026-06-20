@@ -14,11 +14,12 @@ const securityHeaders = [
   // Enables built-in browser XSS protection
   { key: "X-XSS-Protection", value: "1; mode=block" },
   // Content Security Policy — controls what is allowed to load on the page
+  // 'unsafe-eval' is only needed by Next.js dev mode (fast refresh) — excluded in production
   {
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+      `script-src 'self' 'unsafe-inline'${process.env.NODE_ENV === "development" ? " 'unsafe-eval'" : ""}`,
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com",
       "img-src 'self' data: blob:",
