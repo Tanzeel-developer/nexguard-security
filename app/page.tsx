@@ -21,12 +21,12 @@ import {
 
 export default function HomePage() {
   const industries = [
-    { title: "Retail & Commercial", icon: ShoppingBag },
-    { title: "Construction & Mining", icon: HardHat },
-    { title: "Events & Hospitality", icon: Siren },
-    { title: "Healthcare & Education", icon: HeartPulse },
-    { title: "Government & Corporate", icon: Landmark },
-    { title: "Residential & Strata", icon: Home },
+    { title: "Retail & Commercial", icon: ShoppingBag, slug: "retail-commercial" },
+    { title: "Construction & Mining", icon: HardHat, slug: "construction-mining" },
+    { title: "Events & Hospitality", icon: Siren, slug: "events-hospitality" },
+    { title: "Healthcare & Education", icon: HeartPulse, slug: "healthcare-education" },
+    { title: "Government & Corporate", icon: Landmark, slug: "government-corporate" },
+    { title: "Residential & Strata", icon: Home, slug: "residential-strata" },
   ];
 
   const stats = [
@@ -208,9 +208,10 @@ export default function HomePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {industries.map((item, index) => (
-              <div
+              <Link
                 key={index}
-                className="bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 rounded-2xl p-6 flex flex-col items-center gap-3 text-center hover:border-blue-300 dark:hover:border-cyan-500/30 hover:shadow-md transition-all duration-300"
+                href={`/industries/${item.slug}`}
+                className="bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 rounded-2xl p-6 flex flex-col items-center gap-3 text-center hover:border-blue-300 dark:hover:border-cyan-500/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-600/10 border border-blue-100 dark:border-blue-500/20 flex items-center justify-center">
                   <item.icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -218,7 +219,7 @@ export default function HomePage() {
                 <p className="text-sm font-semibold text-slate-700 dark:text-zinc-200 leading-tight">
                   {item.title}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
 

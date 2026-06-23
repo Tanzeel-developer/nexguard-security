@@ -1,0 +1,396 @@
+export type Industry = {
+  slug: string;
+  title: string;
+  shortDesc: string;
+  image: string;
+  seoTitle: string;
+  metaDescription: string;
+  keywords: string[];
+  heroTagline: string;
+  heroBadge: string;
+  intro: string[];
+  challenges: { title: string; desc: string }[];
+  services: { title: string; desc: string; slug: string }[];
+  benefits: { title: string; desc: string }[];
+  stats: { value: string; label: string }[];
+  faqs: { q: string; a: string }[];
+  relatedServiceSlugs: string[];
+};
+
+export const industries: Industry[] = [
+  {
+    slug: "retail-commercial",
+    title: "Retail & Commercial Security",
+    shortDesc: "Protecting Perth retailers, shopping centres and commercial premises from theft, shrinkage and anti-social behaviour.",
+    image: "/Retail Security & Loss Prevention.jpeg",
+    seoTitle: "Retail Security Perth | Loss Prevention Guards | NexGuard Protection",
+    metaDescription: "Professional retail security and loss prevention guards across Perth WA. Reduce theft and shrinkage for shops, shopping centres and commercial premises. Fully licensed. Get a free quote.",
+    keywords: [
+      "retail security Perth",
+      "loss prevention Perth",
+      "shopping centre security Perth",
+      "retail security guards WA",
+      "shop security Western Australia",
+      "loss prevention guards Perth",
+      "commercial security Perth",
+      "anti-theft security guards Perth",
+    ],
+    heroTagline: "Retail & Commercial Security Perth",
+    heroBadge: "Retail & Loss Prevention",
+    intro: [
+      "Retail theft and shrinkage cost Australian businesses billions each year — and Perth retailers are not immune. From organised shoplifting rings to opportunistic theft and employee dishonesty, the threats facing retail and commercial businesses are constant, evolving and directly damaging to your bottom line.",
+      "NexGuard Protection provides dedicated retail security and loss prevention services across Perth and Western Australia. Our guards don't just stand at doors — they are trained loss prevention professionals who understand retail environments, identify suspicious behaviour before incidents occur, and handle confrontations calmly and within legal boundaries. We work around your trading hours, your team and your specific risk profile.",
+    ],
+    challenges: [
+      { title: "Shoplifting & Organised Retail Crime", desc: "From solo opportunists to coordinated theft groups, shoplifting accounts for the majority of retail loss across Perth stores." },
+      { title: "Employee Theft & Internal Shrinkage", desc: "Internal theft is often underreported. A visible, professional security presence deters dishonest behaviour from within." },
+      { title: "After-Hours Break-Ins & Vandalism", desc: "Commercial premises without overnight protection are prime targets for break-ins, graffiti and property damage." },
+      { title: "Aggressive Customer Behaviour", desc: "Retail staff face increasing incidents of verbal abuse and physical aggression. Security guards de-escalate before situations escalate." },
+      { title: "High-Value Merchandise Risk", desc: "Electronics, fashion, liquor and pharmacy products attract specific theft patterns requiring targeted, trained responses." },
+      { title: "Public Liability & Compliance", desc: "Poorly handled security incidents create legal exposure. Trained guards operate within WA law to protect your business." },
+    ],
+    services: [
+      { title: "Loss Prevention Officers", desc: "Plainclothes or uniformed guards trained specifically in identifying and preventing retail theft.", slug: "retail-security-loss-prevention" },
+      { title: "Static Guards", desc: "A constant, visible security presence at entry points or throughout the store floor.", slug: "static-guards" },
+      { title: "Mobile Patrols", desc: "After-hours patrol vehicles protecting your premises, car parks and surrounds overnight.", slug: "mobile-patrols" },
+      { title: "Alarm Response", desc: "Rapid response to alarm activations at your store or commercial premises 24/7.", slug: "alarm-response" },
+    ],
+    benefits: [
+      { title: "Measurable Theft Reduction", desc: "Clients consistently report significant drops in shoplifting incidents within weeks of engaging our retail security team." },
+      { title: "Customer-Friendly Approach", desc: "Our guards are trained to be approachable and professional — protecting your store without intimidating legitimate customers." },
+      { title: "Peak Period Scaling", desc: "Additional coverage for sales events, holidays and high-risk trading periods when theft risk spikes." },
+      { title: "Incident Documentation", desc: "Detailed written reports for every incident — essential for insurance claims, police reports and internal review." },
+      { title: "Loss Pattern Analysis", desc: "We work with your team to identify recurring theft patterns and adjust guard positioning accordingly." },
+      { title: "WA Licensed Professionals", desc: "Every NexGuard retail security officer holds a current WA security licence and has been police checked." },
+    ],
+    stats: [
+      { value: "24/7", label: "Coverage Available" },
+      { value: "100%", label: "WA Licensed Guards" },
+      { value: "Perth", label: "Metro & Regional WA" },
+      { value: "Fast", label: "Same-Week Deployment" },
+    ],
+    faqs: [
+      { q: "How much does retail security cost in Perth?", a: "Costs depend on store size, shift length, number of guards and whether you need plainclothes or uniformed coverage. Contact us for a tailored, no-obligation quote based on your specific store." },
+      { q: "Should I use plainclothes or uniformed retail security guards?", a: "Both have their place. Uniformed guards act as a strong visible deterrent, while plainclothes loss prevention officers are better for observing and building evidence on suspected repeat offenders. Many retailers use a combination." },
+      { q: "Can retail security guards detain a suspected shoplifter?", a: "Our guards operate strictly within WA legislation. We focus on observation, deterrence and evidence gathering — and will brief you on the legal scope during your onboarding consultation." },
+      { q: "Do you provide security for shopping centres as well as individual stores?", a: "Yes. We cover both individual retail tenancies and broader shopping centre security teams across the Perth metro area." },
+      { q: "How quickly can you start retail security at my store?", a: "In most cases we can deploy within days of your initial enquiry. Contact us with your requirements and we'll turnaround a quote fast." },
+      { q: "Can I get security just for weekends or high-risk periods?", a: "Absolutely. Many retail clients use us specifically for weekends, sales events and peak seasons like Christmas. We build the schedule around your risk windows." },
+    ],
+    relatedServiceSlugs: ["retail-security-loss-prevention", "static-guards", "mobile-patrols", "alarm-response"],
+  },
+
+  {
+    slug: "construction-mining",
+    title: "Construction & Mining Security",
+    shortDesc: "Protecting Perth construction sites, mine sites and resource projects from theft, vandalism and unauthorised access.",
+    image: "/Construction Site Security.jpeg",
+    seoTitle: "Construction Site Security Perth | Mining Security WA | NexGuard",
+    metaDescription: "Licensed construction site and mining security guards across Perth and Western Australia. Protect equipment, materials and workforce 24/7. Tailored site security plans. Get a free quote.",
+    keywords: [
+      "construction site security Perth",
+      "building site security WA",
+      "mining security Western Australia",
+      "site security guards Perth",
+      "construction security company Perth",
+      "equipment theft prevention Perth",
+      "resource project security WA",
+      "after hours site security Perth",
+    ],
+    heroTagline: "Construction & Mining Security Perth",
+    heroBadge: "Construction & Resources",
+    intro: [
+      "Construction sites and mine sites across Perth and Western Australia are among the highest-risk environments for theft, vandalism and safety breaches. Expensive machinery, bulk materials and unattended sites overnight create a perfect storm of risk — and a single theft incident can cost a project tens of thousands of dollars in lost equipment, insurance claims and project delays.",
+      "NexGuard Protection provides specialised construction and mining security services across Perth and regional WA. Our guards are trained for the unique demands of site security — managing access control, conducting regular patrols, monitoring for safety hazards, and responding immediately when incidents occur. We work directly with project managers and site supervisors to build a security plan that fits your timeline and budget.",
+    ],
+    challenges: [
+      { title: "Overnight Equipment & Material Theft", desc: "Tools, copper wiring, fuel, machinery and building materials are stolen from unattended sites — most incidents happen after hours." },
+      { title: "Unauthorised Site Access", desc: "Trespassers, metal thieves and vandals exploit gaps in site access control, creating liability and safety risks." },
+      { title: "Subcontractor & Workforce Management", desc: "Managing who is on site at any given time — especially across large or multi-stage projects — requires rigorous access control." },
+      { title: "Vandalism & Graffiti", desc: "Unprotected sites attract graffiti and deliberate property damage, adding costly remediation to project budgets." },
+      { title: "Safety & Compliance Risk", desc: "Unauthorised persons on construction or mine sites create serious WHS liability. Security guards enforce exclusion zones and safety protocols." },
+      { title: "Remote or Isolated Site Exposure", desc: "Regional and remote mine sites have limited police response times — professional on-site security becomes critical." },
+    ],
+    services: [
+      { title: "Static Site Guards", desc: "Dedicated guards stationed at site entry points and high-risk areas around the clock.", slug: "static-guards" },
+      { title: "Mobile Patrol Units", desc: "Marked patrol vehicles conducting regular site checks — cost-effective for large or multi-site projects.", slug: "mobile-patrols" },
+      { title: "Construction Site Security", desc: "End-to-end construction site security planning, access management and 24/7 protection.", slug: "construction-site-security" },
+      { title: "Alarm Response", desc: "Immediate dispatch to triggered alarms or incidents at your site, day or night.", slug: "alarm-response" },
+    ],
+    benefits: [
+      { title: "After-Hours Site Protection", desc: "Most construction theft happens overnight and on weekends — we provide guards when your site is most vulnerable." },
+      { title: "Access Control & Visitor Logs", desc: "Every person entering and exiting your site is logged, keeping unauthorised individuals out and your records clean." },
+      { title: "GPS Tracked Guards", desc: "Real-time tracking of all active guards with time-stamped digital patrol reports delivered after every shift." },
+      { title: "WHS Compliance Support", desc: "Our guards enforce site safety exclusion zones and security protocols to reduce your WHS liability exposure." },
+      { title: "Tailored to Project Timelines", desc: "Security plans built around your construction phases — scaled up or down as the project progresses." },
+      { title: "Incident Reporting", desc: "Detailed digital reports after every shift — ready for insurance, police or project management records." },
+    ],
+    stats: [
+      { value: "24/7", label: "Site Protection" },
+      { value: "100%", label: "Licenced & Vetted" },
+      { value: "Perth", label: "Metro & Regional WA" },
+      { value: "GPS", label: "Tracked Guards" },
+    ],
+    faqs: [
+      { q: "How much does construction site security cost in Perth?", a: "Costs depend on site size, number of guards, shift length and whether you need static guards, mobile patrols or both. We provide a free tailored quote based on your project's specific requirements." },
+      { q: "Do you provide security for residential construction sites as well as large commercial projects?", a: "Yes. We service everything from small residential builds in Perth's suburbs to large-scale commercial and industrial developments across WA." },
+      { q: "Can you provide overnight-only security for my site?", a: "Yes — overnight and weekend coverage is our most common construction security arrangement, targeting the window when sites are most vulnerable." },
+      { q: "Are your construction security guards trained for site safety?", a: "Yes. Beyond security duties, our site guards are briefed on your site's WHS requirements, exclusion zones and emergency procedures before deployment." },
+      { q: "Do you service mine sites and resource projects in regional WA?", a: "Yes. NexGuard services construction and mining projects across regional Western Australia as well as the Perth metro area." },
+      { q: "How quickly can site security be arranged?", a: "We aim to have guards deployed within days of your initial enquiry for urgent requirements. Contact us and we will turnaround a quote promptly." },
+    ],
+    relatedServiceSlugs: ["construction-site-security", "static-guards", "mobile-patrols", "alarm-response"],
+  },
+
+  {
+    slug: "events-hospitality",
+    title: "Events & Hospitality Security",
+    shortDesc: "Professional crowd control, access management and safety planning for events, venues and hospitality businesses across Perth.",
+    image: "/Event Security & Crowd Control.jpeg",
+    seoTitle: "Event Security Perth | Crowd Control & Venue Security WA | NexGuard",
+    metaDescription: "Professional event security and crowd control for festivals, concerts, corporate events, hotels and venues across Perth WA. Fully licensed guards with crowd control endorsements. Get a free quote.",
+    keywords: [
+      "event security Perth",
+      "crowd control Perth",
+      "venue security Perth",
+      "festival security WA",
+      "hospitality security Perth",
+      "concert security Western Australia",
+      "crowd management Perth",
+      "event security guards WA",
+    ],
+    heroTagline: "Events & Hospitality Security Perth",
+    heroBadge: "Events & Venues",
+    intro: [
+      "Every event — from an intimate corporate dinner to a large-scale public festival — carries unique security and safety responsibilities. Poor crowd management, inadequate access control and slow incident response can turn a successful event into a liability overnight. In an industry where reputation is everything, you cannot afford a security failure.",
+      "NexGuard Protection provides professional event security and crowd control services across Perth and Western Australia. Our team is trained in crowd psychology, conflict de-escalation and emergency evacuation procedures. We work alongside event organisers, venue managers and promoters to build a security plan tailored to your event size, venue layout and attendee profile — and we execute it flawlessly on the day.",
+    ],
+    challenges: [
+      { title: "Crowd Surges & Density Management", desc: "Unmanaged crowd flow at entry points and within venues creates crush risks, especially at sold-out or high-demand events." },
+      { title: "Alcohol-Related Incidents", desc: "Venues and events serving alcohol see higher rates of aggressive behaviour — guards trained in de-escalation are essential." },
+      { title: "Gatecrashers & Ticket Fraud", desc: "Unauthorised entry and counterfeit ticketing create safety and revenue risks that require robust access control protocols." },
+      { title: "Emergency Evacuation Readiness", desc: "Events must have clear evacuation plans. Security teams coordinate with emergency services and manage crowd movement under pressure." },
+      { title: "Venue & Equipment Protection", desc: "High-value production equipment, restricted backstage areas and VIP zones require dedicated security presence." },
+      { title: "Patron & Staff Safety", desc: "Both guests and hospitality staff need to feel safe. Guards provide visible reassurance and rapid response to any incident." },
+    ],
+    services: [
+      { title: "Event Security & Crowd Control", desc: "Full-service event security teams managing entry, crowd flow, incident response and patron safety.", slug: "event-security-crowd-control" },
+      { title: "Static Venue Guards", desc: "Dedicated guards stationed at entry points, backstage access, VIP areas and high-risk zones.", slug: "static-guards" },
+      { title: "Private Party & Function Security", desc: "Discreet, professional security for private events, weddings, birthdays and corporate functions.", slug: "private-parties-functions" },
+      { title: "Mobile Patrol Coverage", desc: "Patrol units covering event perimeters, car parks and external areas for large-scale events.", slug: "mobile-patrols" },
+    ],
+    benefits: [
+      { title: "Crowd Psychology Training", desc: "Our event guards are trained to read and manage crowd behaviour — identifying tension before it becomes an incident." },
+      { title: "Scalable Teams for Any Event Size", desc: "From 2 guards for a private function to large coordinated security teams for major festivals and public events." },
+      { title: "Pre-Event Site Walkthroughs", desc: "We conduct a venue walkthrough and develop a site-specific security plan before every major event." },
+      { title: "Crowd Control Licence Holders", desc: "All event security staff hold current WA security licences with crowd control endorsements where required." },
+      { title: "Coordination with Emergency Services", desc: "We liaise directly with police, fire and ambulance services to ensure a unified emergency response capability." },
+      { title: "Post-Event Incident Reports", desc: "Full written report of all incidents, interventions and observations — provided after every event." },
+    ],
+    stats: [
+      { value: "24/7", label: "Event Coverage" },
+      { value: "100%", label: "Licensed & Endorsed" },
+      { value: "Perth", label: "& Regional WA" },
+      { value: "Fast", label: "Rapid Deployment" },
+    ],
+    faqs: [
+      { q: "How many security guards do I need for my event in Perth?", a: "The number depends on expected attendance, venue type, alcohol service and event nature. As a general guide, public events typically require 1 guard per 50–100 attendees. We provide a recommended number as part of your free consultation." },
+      { q: "Do your event security guards hold crowd control licences?", a: "Yes. Where required under WA legislation, all event security staff hold crowd control endorsements in addition to their core security licence." },
+      { q: "Can you provide security for outdoor festivals in Perth?", a: "Yes — outdoor festivals are one of our specialties. We plan for perimeter security, entry management, crowd flow, patrol coverage and emergency procedures specific to outdoor venues." },
+      { q: "Do you provide security for hotels and hospitality venues in Perth?", a: "Yes. We work regularly with hotels, bars, restaurants and hospitality venues across Perth to provide static guards, concierge security and patron management services." },
+      { q: "How far in advance should I book event security?", a: "We recommend booking as early as possible — especially for weekend events between October and March when demand peaks. That said, we can often accommodate shorter lead times for smaller events." },
+      { q: "What happens if an incident occurs during the event?", a: "Our guards follow trained incident response protocols — de-escalating where possible, removing individuals safely, contacting police when required, and filing a full incident report. Every response is documented." },
+    ],
+    relatedServiceSlugs: ["event-security-crowd-control", "static-guards", "private-parties-functions", "mobile-patrols"],
+  },
+
+  {
+    slug: "healthcare-education",
+    title: "Healthcare & Education Security",
+    shortDesc: "Specialist security for hospitals, aged care facilities, schools, universities and medical centres across Perth WA.",
+    image: "/staticguards.jpg",
+    seoTitle: "Healthcare Security Perth | Hospital & School Security Guards WA | NexGuard",
+    metaDescription: "Specialist healthcare and education security guards across Perth WA. Protecting hospitals, aged care, schools and universities with compliant, professional security services. Get a free quote.",
+    keywords: [
+      "healthcare security Perth",
+      "hospital security guards Perth",
+      "aged care security WA",
+      "school security guards Perth",
+      "university security Western Australia",
+      "medical centre security Perth",
+      "education security company WA",
+      "healthcare facility security Perth",
+    ],
+    heroTagline: "Healthcare & Education Security Perth",
+    heroBadge: "Healthcare & Education",
+    intro: [
+      "Healthcare facilities and educational institutions operate in environments where security failures carry the highest possible stakes. Vulnerable patients, students and staff, 24/7 operations, strict compliance requirements and complex access control needs demand a security partner who truly understands these environments — not a generalist who treats hospitals and schools like any other commercial building.",
+      "NexGuard Protection provides specialist security services for hospitals, aged care facilities, medical centres, schools, TAFEs and universities across Perth and Western Australia. Our guards are briefed extensively on the specific protocols, sensitivities and compliance requirements of healthcare and educational environments — from managing aggressive patients and visitors to enforcing after-hours access control across large campuses.",
+    ],
+    challenges: [
+      { title: "Aggression Towards Staff & Patients", desc: "Healthcare workers face some of the highest rates of workplace violence in Australia. Security guards trained in de-escalation protect both staff and patients." },
+      { title: "24/7 Access Control", desc: "Hospitals and aged care facilities operate around the clock — controlling who enters sensitive wards, medication storage and restricted areas is critical." },
+      { title: "After-Hours Campus Security", desc: "Schools and universities are vulnerable after hours and on weekends when large campuses sit unmonitored — a prime target for vandalism and break-ins." },
+      { title: "Vulnerable Person Management", desc: "Aged care residents and patients with cognitive impairment require guards trained in sensitive, compassionate interaction." },
+      { title: "Visitor & Contractor Management", desc: "Managing the flow of visitors, contractors, delivery personnel and staff across complex facility layouts requires structured access protocols." },
+      { title: "Compliance & Duty of Care", desc: "Healthcare and education institutions face strict regulatory duties around safety. Security failures create significant legal and reputational risk." },
+    ],
+    services: [
+      { title: "Static Guards", desc: "Dedicated security officers stationed at reception, entry points and sensitive areas throughout your facility.", slug: "static-guards" },
+      { title: "Mobile Patrols", desc: "Regular vehicle and foot patrols across campus grounds, car parks and building perimeters.", slug: "mobile-patrols" },
+      { title: "Concierge & Front of House Security", desc: "Professional security with a calm, reassuring manner — essential for healthcare reception and school front offices.", slug: "concierge-corporate-security" },
+      { title: "Alarm Response", desc: "24/7 alarm response for healthcare and education sites, with immediate dispatch and full incident reporting.", slug: "alarm-response" },
+    ],
+    benefits: [
+      { title: "Specialist Environment Training", desc: "Guards are briefed on the specific protocols and sensitivities of healthcare and educational environments before first shift." },
+      { title: "De-escalation Trained", desc: "Experienced in managing agitated patients, distressed visitors and difficult situations with calm, professional restraint." },
+      { title: "Compliance-Ready Operations", desc: "Our security procedures align with WA healthcare and education regulatory requirements." },
+      { title: "Compassionate Presence", desc: "Guards understand the difference between a hospital and a warehouse — their manner reflects the environment." },
+      { title: "Campus-Wide Coverage", desc: "From main reception to car parks, student residences and after-hours perimeter — we cover the full facility." },
+      { title: "Fully Vetted & Police Checked", desc: "Every NexGuard officer has passed thorough police checks — essential for environments involving vulnerable people." },
+    ],
+    stats: [
+      { value: "24/7", label: "Facility Coverage" },
+      { value: "100%", label: "Police Checked" },
+      { value: "Perth", label: "Metro & Regional WA" },
+      { value: "Fast", label: "Incident Response" },
+    ],
+    faqs: [
+      { q: "Do your guards have experience working in hospitals and healthcare settings?", a: "Yes. Guards assigned to healthcare facilities are briefed specifically on healthcare environment protocols, including sensitive patient interaction, ward access and emergency procedures." },
+      { q: "Can security guards manage aggressive patients or visitors?", a: "Our guards are trained in conflict de-escalation and have experience managing agitated individuals in healthcare settings — working to defuse situations calmly before they escalate." },
+      { q: "Do you provide security for aged care facilities in Perth?", a: "Yes. Aged care is a specific area of focus — our guards understand how to interact appropriately with elderly residents and their families while maintaining site security." },
+      { q: "Can you patrol school and university campuses after hours?", a: "Yes. After-hours mobile patrols are one of the most common arrangements for schools and universities across Perth, providing cost-effective perimeter and campus coverage overnight and on weekends." },
+      { q: "Are your guards police checked for working with vulnerable people?", a: "Yes. All NexGuard officers undergo thorough police checks before deployment, which is mandatory for roles in healthcare and education environments." },
+      { q: "Do you provide security for medical centres and GP clinics?", a: "Yes. We cover a range of healthcare settings from major hospital campuses to smaller medical centres, specialist clinics and allied health facilities." },
+    ],
+    relatedServiceSlugs: ["static-guards", "mobile-patrols", "concierge-corporate-security", "alarm-response"],
+  },
+
+  {
+    slug: "government-corporate",
+    title: "Government & Corporate Security",
+    shortDesc: "Professional security services for government buildings, corporate offices, strata complexes and critical infrastructure across Perth.",
+    image: "/Concierge & Corporate Security.jpeg",
+    seoTitle: "Government & Corporate Security Perth | Office Security Guards WA | NexGuard",
+    metaDescription: "Professional government and corporate security guards for Perth office buildings, government facilities and corporate campuses. Concierge security, access control and 24/7 protection. Get a free quote.",
+    keywords: [
+      "government security Perth",
+      "corporate security guards Perth",
+      "office building security WA",
+      "corporate security company Perth",
+      "government facility security Western Australia",
+      "office security guards Perth",
+      "corporate campus security WA",
+      "infrastructure security Perth",
+    ],
+    heroTagline: "Government & Corporate Security Perth",
+    heroBadge: "Government & Corporate",
+    intro: [
+      "Government agencies and corporate organisations carry a unique set of security obligations — protecting sensitive information, managing high volumes of visitors and contractors, maintaining compliance with regulatory requirements and projecting a professional, secure image to staff and the public alike. Generic security solutions don't meet these standards.",
+      "NexGuard Protection delivers professional government and corporate security services across Perth and Western Australia. Our officers combine polished, professional presentation with genuine security expertise — managing access control, visitor management and incident response while maintaining the calm, authoritative manner that government and corporate environments demand.",
+    ],
+    challenges: [
+      { title: "Sensitive Information & Asset Protection", desc: "Government and corporate buildings house confidential data, assets and personnel that require strict access control and discretion." },
+      { title: "High-Volume Visitor & Contractor Management", desc: "Managing hundreds of visitors, contractors and deliveries each day requires structured, professional access protocols." },
+      { title: "Compliance & Regulatory Requirements", desc: "Government facilities and corporate organisations face specific security obligations under WA and federal legislation." },
+      { title: "Internal Threat Mitigation", desc: "Corporate environments are not immune to internal security risks — guards provide a deterrent and early-warning function." },
+      { title: "Workplace Safety & Incident Response", desc: "From threatening visitors to medical emergencies, corporate security guards provide a first-response capability." },
+      { title: "Image & Brand Representation", desc: "Security staff at a government building or corporate HQ represent the organisation. Professional presentation is non-negotiable." },
+    ],
+    services: [
+      { title: "Concierge & Corporate Security", desc: "Front-of-house security officers combining a professional, polished presence with full security expertise.", slug: "concierge-corporate-security" },
+      { title: "Static Guards", desc: "Dedicated security officers stationed at entry points, reception and sensitive areas throughout your facility.", slug: "static-guards" },
+      { title: "Mobile Patrols", desc: "Regular patrols of building perimeters, car parks and common areas — especially after hours.", slug: "mobile-patrols" },
+      { title: "Alarm Response", desc: "24/7 alarm response with immediate dispatch and full incident reporting.", slug: "alarm-response" },
+    ],
+    benefits: [
+      { title: "Professional Corporate Presentation", desc: "Guards arrive in pressed NexGuard uniform, briefed on your building's protocols — representing your organisation with authority." },
+      { title: "Visitor & Contractor Access Control", desc: "Structured visitor management including sign-in, ID checking, escort protocols and contractor access logs." },
+      { title: "Confidentiality & Discretion", desc: "Our officers understand the sensitivity of government and corporate environments and operate with complete discretion." },
+      { title: "Compliance-Aligned Procedures", desc: "Security protocols designed to align with government procurement standards and corporate governance requirements." },
+      { title: "Consistent Guard Assignment", desc: "The same security officer assigned to your building where possible — building familiarity with your team, tenants and protocols." },
+      { title: "24/7 Operational Support", desc: "Our operations team is always reachable — providing immediate support and communication for any security matter." },
+    ],
+    stats: [
+      { value: "24/7", label: "Building Coverage" },
+      { value: "100%", label: "Vetted & Licensed" },
+      { value: "Perth", label: "CBD & Metro WA" },
+      { value: "GPS", label: "Tracked & Reported" },
+    ],
+    faqs: [
+      { q: "Can NexGuard provide security for government-owned buildings and facilities?", a: "Yes. We provide security for government buildings, local councils and public sector facilities across Perth WA, with procedures aligned to public sector requirements." },
+      { q: "What's the difference between concierge security and a regular static guard?", a: "Concierge security guards combine professional front-of-house customer service with full security training — ideal for corporate reception areas, government building entry points and environments where the guard is also the public face of the building." },
+      { q: "Can you manage visitor and contractor sign-in at our corporate office?", a: "Yes. Visitor management, contractor access control, ID checking and delivery management are all standard functions of our corporate security service." },
+      { q: "Do corporate security guards need a WA security licence?", a: "Yes. All NexGuard officers hold a current Western Australian security licence regardless of their specific role or client environment." },
+      { q: "Can you provide security for strata-managed office buildings?", a: "Yes. Strata office buildings across Perth CBD and metro areas are among our most common corporate security engagements." },
+      { q: "How do you ensure discretion for sensitive government or corporate environments?", a: "Our officers are briefed on confidentiality expectations before any engagement. We maintain strict protocols around information handling and operate with the professionalism that government and corporate environments demand." },
+    ],
+    relatedServiceSlugs: ["concierge-corporate-security", "static-guards", "mobile-patrols", "alarm-response"],
+  },
+
+  {
+    slug: "residential-strata",
+    title: "Residential & Strata Security",
+    shortDesc: "Protecting Perth residential complexes, strata buildings, gated communities and private properties with professional security services.",
+    image: "/Mobile Patrols.jpeg",
+    seoTitle: "Residential Security Perth | Strata Security Guards WA | NexGuard",
+    metaDescription: "Professional residential and strata security services across Perth WA. Mobile patrols, static guards and alarm response for apartment complexes, gated communities and private residences. Get a free quote.",
+    keywords: [
+      "residential security Perth",
+      "strata security WA",
+      "apartment security Perth",
+      "strata security guards Western Australia",
+      "residential security guards Perth",
+      "gated community security Perth",
+      "body corporate security WA",
+      "home security guards Perth",
+    ],
+    heroTagline: "Residential & Strata Security Perth",
+    heroBadge: "Residential & Strata",
+    intro: [
+      "Residential buildings and strata communities face a growing range of security challenges — from break-ins and package theft to anti-social behaviour in common areas and unauthorised vehicle access. As Perth's apartment and strata market grows, so does the need for professional, affordable residential security that actually works.",
+      "NexGuard Protection provides dedicated residential and strata security services across Perth and Western Australia. Whether you manage a large strata complex, a body corporate, a gated community or a private residential estate, we provide security solutions tailored to your building's layout, resident profile and specific risk areas — giving residents the peace of mind they deserve.",
+    ],
+    challenges: [
+      { title: "Break-Ins & Unauthorised Entry", desc: "Residential complexes with poor access control are vulnerable to break-ins targeting individual units, car parks and storage areas." },
+      { title: "Anti-Social Behaviour in Common Areas", desc: "Pool areas, car parks, lobbies and common rooms are flashpoints for noise, vandalism and disruptive behaviour that affect all residents." },
+      { title: "Package & Property Theft", desc: "Parcel theft from building foyers, bike theft from car parks and property damage to common areas are persistent issues in Perth residential buildings." },
+      { title: "Uncontrolled Visitor & Contractor Access", desc: "Buildings with multiple entry points and no visitor management allow unauthorised people to enter freely." },
+      { title: "After-Hours Noise & Disturbances", desc: "Late-night disturbances in strata complexes are difficult for building managers and body corporates to address without professional support." },
+      { title: "Resident Safety & Perception", desc: "Residents who feel unsafe in their own building are less satisfied, more likely to vacate — and the building's reputation suffers." },
+    ],
+    services: [
+      { title: "Mobile Patrols", desc: "Regular or random patrol vehicles visiting your complex to check perimeters, car parks and common areas.", slug: "mobile-patrols" },
+      { title: "Static Guards", desc: "A dedicated security officer on-site for the required hours — ideal for larger complexes or high-security residential buildings.", slug: "static-guards" },
+      { title: "Alarm Response", desc: "Immediate dispatch to alarm activations at your complex 24/7, with full reporting after every response.", slug: "alarm-response" },
+      { title: "Concierge Security", desc: "Front-of-house security officers managing building entry, visitor access and resident queries at premium residential buildings.", slug: "concierge-corporate-security" },
+    ],
+    benefits: [
+      { title: "Cost-Effective Strata Coverage", desc: "Mobile patrol packages provide professional security at a fraction of the cost of a full-time guard — ideal for body corporates managing budgets." },
+      { title: "Visible Deterrence", desc: "A marked NexGuard patrol vehicle visiting your complex regularly is one of the strongest deterrents against opportunistic crime." },
+      { title: "Common Area Management", desc: "Guards patrol and monitor pool areas, car parks, lobbies and other common areas — addressing issues before they escalate." },
+      { title: "Resident Peace of Mind", desc: "Residents who see active security on their property feel safer — improving satisfaction, retention and the building's reputation." },
+      { title: "Body Corporate Reporting", desc: "Detailed patrol and incident reports delivered after every service — ready for committee meetings and strata records." },
+      { title: "Flexible Coverage Options", desc: "From nightly patrols to full 24/7 concierge security, we build the solution around your building's needs and budget." },
+    ],
+    stats: [
+      { value: "24/7", label: "Available Coverage" },
+      { value: "100%", label: "Licensed Guards" },
+      { value: "Perth", label: "Metro & Suburbs" },
+      { value: "Fast", label: "Alarm Response" },
+    ],
+    faqs: [
+      { q: "How much does strata security cost in Perth?", a: "Mobile patrol packages for strata complexes are among the most affordable security options — far less than a full-time guard. Costs vary based on patrol frequency, building size and hours of coverage. Contact us for a tailored quote." },
+      { q: "Can mobile patrols cover my apartment complex's car park and common areas?", a: "Yes. Our patrol officers check all key areas on each visit — car parks, building perimeters, foyer access points, pool areas and any other areas your body corporate identifies as priorities." },
+      { q: "Do you work with body corporates and strata managers?", a: "Yes. We regularly work with strata managers and body corporate committees across Perth, providing tailored security plans and detailed reports that fit strata governance requirements." },
+      { q: "Can you help with after-hours noise and disturbances at a residential complex?", a: "Yes. Our guards can attend and address disturbances in common areas — providing a calm, professional presence that building managers and residents cannot always provide themselves." },
+      { q: "What's the best security option for a small strata complex in Perth?", a: "For most smaller strata complexes, a nightly mobile patrol package provides the best balance of visible deterrence, coverage and cost-effectiveness. We can design a patrol schedule around your specific risk windows." },
+      { q: "Do you provide security for gated residential communities?", a: "Yes. Gated communities, private estates and premium residential developments across Perth are well-suited to our static guard and concierge security services." },
+    ],
+    relatedServiceSlugs: ["mobile-patrols", "static-guards", "alarm-response", "concierge-corporate-security"],
+  },
+];
+
+export function getIndustryBySlug(slug: string) {
+  return industries.find((i) => i.slug === slug);
+}
