@@ -1,23 +1,16 @@
 import Image from "next/image";
-import { ThemeToggle } from "./components/ThemeToggle";
-import { MobileMenu } from "./components/MobileMenu";
+import Link from "next/link";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 import { ContactForm } from "./components/ContactForm";
+import { services } from "./data/services";
 
 import {
   ShieldCheck,
-  Building2,
   Siren,
-  Users,
-  Store,
-  PartyPopper,
-  BellRing,
-  Briefcase,
   CheckCircle2,
   ArrowRight,
   Phone,
-  Mail,
-  MapPin,
-  Clock3,
   Star,
   HardHat,
   ShoppingBag,
@@ -27,57 +20,6 @@ import {
 } from "lucide-react";
 
 export default function HomePage() {
-  const services = [
-    {
-      title: "Construction Site Security",
-      desc: "Protect your sites, equipment and workforce from theft and unauthorised access.",
-      icon: Building2,
-      image: "/Construction Site Security.jpeg",
-    },
-    {
-      title: "Mobile Patrols",
-      desc: "Visible deterrence with random or scheduled patrols to keep your property secure around the clock.",
-      icon: ShieldCheck,
-      image: "/Mobile Patrols.jpeg",
-    },
-    {
-      title: "Static Guards",
-      desc: "Professional on-site guards providing access control, monitoring and a visible security presence.",
-      icon: Users,
-      image: "/staticguards.jpg",
-    },
-    {
-      title: "Event Security & Crowd Control",
-      desc: "Crowd management, access control and safety planning for events of any scale across Perth.",
-      icon: Siren,
-      image: "/Event Security & Crowd Control.jpeg",
-    },
-    {
-      title: "Retail Security & Loss Prevention",
-      desc: "Reduce theft and shrinkage with proactive in-store protection and loss prevention strategies.",
-      icon: Store,
-      image: "/Retail Security & Loss Prevention.jpeg",
-    },
-    {
-      title: "Alarm Response",
-      desc: "Fast 24/7 response to alarm activations and urgent security incidents across the Perth metro area.",
-      icon: BellRing,
-      image: "/alarmresponse.jpg",
-    },
-    {
-      title: "Concierge & Corporate Security",
-      desc: "Professional front-of-house security for office buildings, hotels, strata and corporate campuses.",
-      icon: Briefcase,
-      image: "/Concierge & Corporate Security.jpeg",
-    },
-    {
-      title: "Private Parties & Functions",
-      desc: "Experienced security personnel for private events, parties and social gatherings of any size.",
-      icon: PartyPopper,
-      image: "/Private Parties & Functions.jpeg",
-    },
-  ];
-
   const industries = [
     { title: "Retail & Commercial", icon: ShoppingBag },
     { title: "Construction & Mining", icon: HardHat },
@@ -118,36 +60,7 @@ export default function HomePage() {
   return (
     <main id="main-content" className="bg-white dark:bg-[#020817] text-slate-900 dark:text-white">
 
-      {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 bg-white/90 dark:bg-[#020817]/90 backdrop-blur-xl border-b border-slate-200 dark:border-white/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between relative">
-
-          <div>
-            <Image src="/logo-light.svg" alt="NexGuard Protection" width={150} height={40} priority className="block dark:hidden" />
-            <Image src="/logo-dark.svg" alt="NexGuard Protection" width={150} height={40} priority className="hidden dark:block" />
-          </div>
-
-          <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-zinc-300">
-            <a href="/" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Home</a>
-            <a href="#services" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Services</a>
-            <a href="#industries" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Industries</a>
-            <a href="#advantages" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Why Us</a>
-            <a href="#contact-form" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Contact</a>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <ThemeToggle />
-            <a
-              href="#contact-form"
-              className="hidden lg:inline-flex bg-blue-600 hover:bg-blue-700 text-white transition-colors px-5 py-2.5 rounded-lg text-sm font-semibold"
-            >
-              Get a Quote
-            </a>
-            <MobileMenu />
-          </div>
-
-        </div>
-      </nav>
+      <Navbar />
 
       {/* HERO */}
       <section className="relative min-h-[calc(100vh-64px)] overflow-hidden">
@@ -240,10 +153,11 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 rounded-2xl overflow-hidden hover:-translate-y-1 transition-all duration-300 hover:shadow-lg dark:hover:border-cyan-500/30 hover:border-blue-200"
+            {services.map((service) => (
+              <Link
+                key={service.slug}
+                href={`/services/${service.slug}`}
+                className="group bg-white dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 rounded-2xl overflow-hidden hover:-translate-y-1 transition-all duration-300 hover:shadow-lg dark:hover:border-cyan-500/30 hover:border-blue-200 flex flex-col"
               >
                 <div className="h-44 relative">
                   <Image
@@ -254,18 +168,22 @@ export default function HomePage() {
                     className="object-cover"
                   />
                 </div>
-                <div className="p-5">
+                <div className="p-5 flex flex-col flex-1">
                   <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-600/10 border border-blue-100 dark:border-blue-500/20 mb-4 flex items-center justify-center">
                     <service.icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                   </div>
                   <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">
-                    {service.desc}
+                  <p className="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed mb-4">
+                    {service.shortDesc}
                   </p>
+                  <span className="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 dark:text-cyan-400 group-hover:gap-2.5 transition-all">
+                    Learn More
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
@@ -438,76 +356,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer id="contact" className="border-t border-slate-200 dark:border-white/10 py-16 bg-slate-50 dark:bg-[#030712]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-4 gap-12">
-
-          <div>
-            <div className="inline-block">
-              <Image src="/logo-light.svg" alt="NexGuard Protection" width={140} height={38} className="block dark:hidden" />
-              <Image src="/logo-dark.svg" alt="NexGuard Protection" width={140} height={38} className="hidden dark:block" />
-            </div>
-            <p className="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed mt-5">
-              Perth&apos;s trusted security partner. Fully licensed, police checked and insured security services across Western Australia.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="font-bold text-slate-900 dark:text-white text-sm mb-4">Quick Links</h4>
-            <div className="space-y-2.5 text-sm text-slate-500 dark:text-zinc-400">
-              <p><a href="/" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Home</a></p>
-              <p><a href="#services" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Services</a></p>
-              <p><a href="#industries" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Industries</a></p>
-              <p><a href="#advantages" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Why NexGuard</a></p>
-              <p><a href="#contact-form" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Contact</a></p>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-bold text-slate-900 dark:text-white text-sm mb-4">Services</h4>
-            <div className="space-y-2.5 text-sm text-slate-500 dark:text-zinc-400">
-              <p>Construction Site Security</p>
-              <p>Mobile Patrols</p>
-              <p>Static Guards</p>
-              <p>Event Security & Crowd Control</p>
-              <p>Retail Security & Loss Prevention</p>
-              <p>Alarm Response</p>
-              <p>Concierge & Corporate Security</p>
-              <p>Private Parties & Functions</p>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-bold text-slate-900 dark:text-white text-sm mb-4">Contact</h4>
-            <div className="space-y-3 text-sm text-slate-500 dark:text-zinc-400">
-              <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-blue-600 dark:text-cyan-400 shrink-0" />
-                <a href="tel:+61491215175" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">+61 491 215 175</a>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-blue-600 dark:text-cyan-400 shrink-0" />
-                <a href="mailto:Info@nexguard.au" className="hover:text-blue-600 dark:hover:text-cyan-400 transition-colors">Info@nexguard.au</a>
-              </div>
-              <div className="flex items-center gap-3">
-                <MapPin className="w-4 h-4 text-blue-600 dark:text-cyan-400 shrink-0" />
-                <p>Perth WA 6000</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Clock3 className="w-4 h-4 text-blue-600 dark:text-cyan-400 shrink-0" />
-                <p>24/7 Availability</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 mt-12 pt-6 border-t border-slate-200 dark:border-white/5">
-          <p className="text-xs text-slate-400 dark:text-zinc-600 text-center">
-            © {new Date().getFullYear()} NexGuard Protection. All rights reserved. | Perth, Western Australia
-          </p>
-        </div>
-
-      </footer>
+      <Footer />
 
     </main>
   );

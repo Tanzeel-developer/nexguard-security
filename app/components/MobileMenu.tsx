@@ -5,10 +5,10 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "#services" },
-  { label: "About Us", href: "#advantages" },
-  { label: "Our Advantage", href: "#advantages" },
-  { label: "Contact", href: "#contact-form" },
+  { label: "Services", href: "/#services" },
+  { label: "Industries", href: "/#industries" },
+  { label: "Why Us", href: "/#advantages" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function MobileMenu() {
@@ -37,7 +37,7 @@ export function MobileMenu() {
             </a>
           ))}
           <a
-            href="#contact-form"
+            href="/contact"
             onClick={() => setOpen(false)}
             className="mt-3 bg-blue-600 hover:bg-blue-700 text-white text-center transition-colors px-5 py-2.5 rounded-lg text-sm font-semibold"
           >
