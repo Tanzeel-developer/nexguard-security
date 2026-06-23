@@ -38,7 +38,7 @@ export const industries: Industry[] = [
     heroTagline: "Retail & Commercial Security Perth",
     heroBadge: "Retail & Loss Prevention",
     intro: [
-      "Retail theft and shrinkage cost Australian businesses billions each year — and Perth retailers are not immune. From organised shoplifting rings to opportunistic theft and employee dishonesty, the threats facing retail and commercial businesses are constant, evolving and directly damaging to your bottom line.",
+      "Retail theft, shrinkage and anti-social behaviour are persistent challenges for Perth retailers — and the cost goes beyond lost stock. Staff safety, customer experience and brand reputation are all at risk. From opportunistic shoplifting to more organised retail crime, the threats facing commercial businesses are constant and evolving.",
       "NexGuard Protection provides dedicated retail security and loss prevention services across Perth and Western Australia. Our guards don't just stand at doors — they are trained loss prevention professionals who understand retail environments, identify suspicious behaviour before incidents occur, and handle confrontations calmly and within legal boundaries. We work around your trading hours, your team and your specific risk profile.",
     ],
     challenges: [
@@ -56,7 +56,7 @@ export const industries: Industry[] = [
       { title: "Alarm Response", desc: "Rapid response to alarm activations at your store or commercial premises 24/7.", slug: "alarm-response" },
     ],
     benefits: [
-      { title: "Measurable Theft Reduction", desc: "Clients consistently report significant drops in shoplifting incidents within weeks of engaging our retail security team." },
+      { title: "Proactive Theft Deterrence", desc: "A visible, professional security presence is one of the most effective deterrents against shoplifting — our clients see the difference from day one." },
       { title: "Customer-Friendly Approach", desc: "Our guards are trained to be approachable and professional — protecting your store without intimidating legitimate customers." },
       { title: "Peak Period Scaling", desc: "Additional coverage for sales events, holidays and high-risk trading periods when theft risk spikes." },
       { title: "Incident Documentation", desc: "Detailed written reports for every incident — essential for insurance claims, police reports and internal review." },
@@ -67,7 +67,7 @@ export const industries: Industry[] = [
       { value: "24/7", label: "Coverage Available" },
       { value: "100%", label: "WA Licensed Guards" },
       { value: "Perth", label: "Metro & Regional WA" },
-      { value: "Fast", label: "Same-Week Deployment" },
+      { value: "Fast", label: "Deployment" },
     ],
     faqs: [
       { q: "How much does retail security cost in Perth?", a: "Costs depend on store size, shift length, number of guards and whether you need plainclothes or uniformed coverage. Contact us for a tailored, no-obligation quote based on your specific store." },
@@ -82,26 +82,26 @@ export const industries: Industry[] = [
 
   {
     slug: "construction-mining",
-    title: "Construction & Mining Security",
-    shortDesc: "Protecting Perth construction sites, mine sites and resource projects from theft, vandalism and unauthorised access.",
+    title: "Construction & Industrial Security",
+    shortDesc: "Protecting Perth construction sites, industrial premises and development projects from theft, vandalism and unauthorised access.",
     image: "/Construction Site Security.jpeg",
-    seoTitle: "Construction Site Security Perth | Mining Security WA | NexGuard",
-    metaDescription: "Licensed construction site and mining security guards across Perth and Western Australia. Protect equipment, materials and workforce 24/7. Tailored site security plans. Get a free quote.",
+    seoTitle: "Construction Site Security Perth | Industrial Security WA | NexGuard",
+    metaDescription: "Licensed construction site and industrial security guards across Perth and Western Australia. Protect equipment, materials and workforce 24/7. Tailored site security plans. Get a free quote.",
     keywords: [
       "construction site security Perth",
       "building site security WA",
-      "mining security Western Australia",
+      "industrial security Western Australia",
       "site security guards Perth",
       "construction security company Perth",
       "equipment theft prevention Perth",
-      "resource project security WA",
+      "industrial site security WA",
       "after hours site security Perth",
     ],
-    heroTagline: "Construction & Mining Security Perth",
-    heroBadge: "Construction & Resources",
+    heroTagline: "Construction & Industrial Security Perth",
+    heroBadge: "Construction & Industrial",
     intro: [
-      "Construction sites and mine sites across Perth and Western Australia are among the highest-risk environments for theft, vandalism and safety breaches. Expensive machinery, bulk materials and unattended sites overnight create a perfect storm of risk — and a single theft incident can cost a project tens of thousands of dollars in lost equipment, insurance claims and project delays.",
-      "NexGuard Protection provides specialised construction and mining security services across Perth and regional WA. Our guards are trained for the unique demands of site security — managing access control, conducting regular patrols, monitoring for safety hazards, and responding immediately when incidents occur. We work directly with project managers and site supervisors to build a security plan that fits your timeline and budget.",
+      "Construction sites and industrial premises across Perth and Western Australia are among the highest-risk environments for theft, vandalism and safety breaches. Expensive machinery, bulk materials and unattended sites overnight create significant exposure — and a single theft incident can result in costly project delays, insurance claims and replacement expenses.",
+      "NexGuard Protection provides specialised construction and industrial security services across Perth and Western Australia. Our guards are trained for the unique demands of site security — managing access control, conducting regular patrols, monitoring for safety hazards, and responding immediately when incidents occur. We work directly with project managers and site supervisors to build a security plan that fits your timeline and budget.",
     ],
     challenges: [
       { title: "Overnight Equipment & Material Theft", desc: "Tools, copper wiring, fuel, machinery and building materials are stolen from unattended sites — most incidents happen after hours." },
@@ -109,7 +109,7 @@ export const industries: Industry[] = [
       { title: "Subcontractor & Workforce Management", desc: "Managing who is on site at any given time — especially across large or multi-stage projects — requires rigorous access control." },
       { title: "Vandalism & Graffiti", desc: "Unprotected sites attract graffiti and deliberate property damage, adding costly remediation to project budgets." },
       { title: "Safety & Compliance Risk", desc: "Unauthorised persons on construction or mine sites create serious WHS liability. Security guards enforce exclusion zones and safety protocols." },
-      { title: "Remote or Isolated Site Exposure", desc: "Regional and remote mine sites have limited police response times — professional on-site security becomes critical." },
+      { title: "Remote or Isolated Site Exposure", desc: "Sites outside the Perth metro area have longer emergency response times — professional on-site security becomes critical." },
     ],
     services: [
       { title: "Static Site Guards", desc: "Dedicated guards stationed at site entry points and high-risk areas around the clock.", slug: "static-guards" },
@@ -120,7 +120,7 @@ export const industries: Industry[] = [
     benefits: [
       { title: "After-Hours Site Protection", desc: "Most construction theft happens overnight and on weekends — we provide guards when your site is most vulnerable." },
       { title: "Access Control & Visitor Logs", desc: "Every person entering and exiting your site is logged, keeping unauthorised individuals out and your records clean." },
-      { title: "GPS Tracked Guards", desc: "Real-time tracking of all active guards with time-stamped digital patrol reports delivered after every shift." },
+      { title: "Time-Stamped Digital Patrol Reports", desc: "Detailed written reports delivered after every shift — giving you a clear record of all activity, patrols and incidents on site." },
       { title: "WHS Compliance Support", desc: "Our guards enforce site safety exclusion zones and security protocols to reduce your WHS liability exposure." },
       { title: "Tailored to Project Timelines", desc: "Security plans built around your construction phases — scaled up or down as the project progresses." },
       { title: "Incident Reporting", desc: "Detailed digital reports after every shift — ready for insurance, police or project management records." },
@@ -129,14 +129,14 @@ export const industries: Industry[] = [
       { value: "24/7", label: "Site Protection" },
       { value: "100%", label: "Licenced & Vetted" },
       { value: "Perth", label: "Metro & Regional WA" },
-      { value: "GPS", label: "Tracked Guards" },
+      { value: "Fast", label: "Site Deployment" },
     ],
     faqs: [
       { q: "How much does construction site security cost in Perth?", a: "Costs depend on site size, number of guards, shift length and whether you need static guards, mobile patrols or both. We provide a free tailored quote based on your project's specific requirements." },
       { q: "Do you provide security for residential construction sites as well as large commercial projects?", a: "Yes. We service everything from small residential builds in Perth's suburbs to large-scale commercial and industrial developments across WA." },
       { q: "Can you provide overnight-only security for my site?", a: "Yes — overnight and weekend coverage is our most common construction security arrangement, targeting the window when sites are most vulnerable." },
       { q: "Are your construction security guards trained for site safety?", a: "Yes. Beyond security duties, our site guards are briefed on your site's WHS requirements, exclusion zones and emergency procedures before deployment." },
-      { q: "Do you service mine sites and resource projects in regional WA?", a: "Yes. NexGuard services construction and mining projects across regional Western Australia as well as the Perth metro area." },
+      { q: "Do you service construction projects outside the Perth metro area?", a: "Yes. NexGuard services construction and industrial projects across the Perth metro area and surrounding regions of Western Australia. Contact us to discuss your site location." },
       { q: "How quickly can site security be arranged?", a: "We aim to have guards deployed within days of your initial enquiry for urgent requirements. Contact us and we will turnaround a quote promptly." },
     ],
     relatedServiceSlugs: ["construction-site-security", "static-guards", "mobile-patrols", "alarm-response"],
@@ -163,7 +163,7 @@ export const industries: Industry[] = [
     heroBadge: "Events & Venues",
     intro: [
       "Every event — from an intimate corporate dinner to a large-scale public festival — carries unique security and safety responsibilities. Poor crowd management, inadequate access control and slow incident response can turn a successful event into a liability overnight. In an industry where reputation is everything, you cannot afford a security failure.",
-      "NexGuard Protection provides professional event security and crowd control services across Perth and Western Australia. Our team is trained in crowd psychology, conflict de-escalation and emergency evacuation procedures. We work alongside event organisers, venue managers and promoters to build a security plan tailored to your event size, venue layout and attendee profile — and we execute it flawlessly on the day.",
+      "NexGuard Protection provides professional event security and crowd control services across Perth and Western Australia. Our team is trained in crowd management, conflict de-escalation and emergency evacuation procedures. We work alongside event organisers, venue managers and promoters to build a security plan tailored to your event size, venue layout and attendee profile — and we deliver on the day.",
     ],
     challenges: [
       { title: "Crowd Surges & Density Management", desc: "Unmanaged crowd flow at entry points and within venues creates crush risks, especially at sold-out or high-demand events." },
@@ -180,11 +180,11 @@ export const industries: Industry[] = [
       { title: "Mobile Patrol Coverage", desc: "Patrol units covering event perimeters, car parks and external areas for large-scale events.", slug: "mobile-patrols" },
     ],
     benefits: [
-      { title: "Crowd Psychology Training", desc: "Our event guards are trained to read and manage crowd behaviour — identifying tension before it becomes an incident." },
+      { title: "Crowd Management Training", desc: "Our event guards are trained to read and manage crowd behaviour — identifying tension before it becomes an incident." },
       { title: "Scalable Teams for Any Event Size", desc: "From 2 guards for a private function to large coordinated security teams for major festivals and public events." },
       { title: "Pre-Event Site Walkthroughs", desc: "We conduct a venue walkthrough and develop a site-specific security plan before every major event." },
       { title: "Crowd Control Licence Holders", desc: "All event security staff hold current WA security licences with crowd control endorsements where required." },
-      { title: "Coordination with Emergency Services", desc: "We liaise directly with police, fire and ambulance services to ensure a unified emergency response capability." },
+      { title: "Emergency Response Planning", desc: "Our event security plans include clear escalation procedures and defined contact points for police, fire and ambulance services." },
       { title: "Post-Event Incident Reports", desc: "Full written report of all incidents, interventions and observations — provided after every event." },
     ],
     stats: [
@@ -194,7 +194,7 @@ export const industries: Industry[] = [
       { value: "Fast", label: "Rapid Deployment" },
     ],
     faqs: [
-      { q: "How many security guards do I need for my event in Perth?", a: "The number depends on expected attendance, venue type, alcohol service and event nature. As a general guide, public events typically require 1 guard per 50–100 attendees. We provide a recommended number as part of your free consultation." },
+      { q: "How many security guards do I need for my event in Perth?", a: "The right number depends on expected attendance, venue layout, alcohol service, event type and any specific risk factors. We assess all of these during your free consultation and provide a tailored recommendation — there is no reliable one-size-fits-all formula." },
       { q: "Do your event security guards hold crowd control licences?", a: "Yes. Where required under WA legislation, all event security staff hold crowd control endorsements in addition to their core security licence." },
       { q: "Can you provide security for outdoor festivals in Perth?", a: "Yes — outdoor festivals are one of our specialties. We plan for perimeter security, entry management, crowd flow, patrol coverage and emergency procedures specific to outdoor venues." },
       { q: "Do you provide security for hotels and hospitality venues in Perth?", a: "Yes. We work regularly with hotels, bars, restaurants and hospitality venues across Perth to provide static guards, concierge security and patron management services." },
@@ -244,7 +244,7 @@ export const industries: Industry[] = [
     benefits: [
       { title: "Specialist Environment Training", desc: "Guards are briefed on the specific protocols and sensitivities of healthcare and educational environments before first shift." },
       { title: "De-escalation Trained", desc: "Experienced in managing agitated patients, distressed visitors and difficult situations with calm, professional restraint." },
-      { title: "Compliance-Ready Operations", desc: "Our security procedures align with WA healthcare and education regulatory requirements." },
+      { title: "Compliance-Conscious Operations", desc: "Our procedures are designed with healthcare and education environments in mind — we work with your management team to align with your facility's specific requirements." },
       { title: "Compassionate Presence", desc: "Guards understand the difference between a hospital and a warehouse — their manner reflects the environment." },
       { title: "Campus-Wide Coverage", desc: "From main reception to car parks, student residences and after-hours perimeter — we cover the full facility." },
       { title: "Fully Vetted & Police Checked", desc: "Every NexGuard officer has passed thorough police checks — essential for environments involving vulnerable people." },
@@ -260,7 +260,7 @@ export const industries: Industry[] = [
       { q: "Can security guards manage aggressive patients or visitors?", a: "Our guards are trained in conflict de-escalation and have experience managing agitated individuals in healthcare settings — working to defuse situations calmly before they escalate." },
       { q: "Do you provide security for aged care facilities in Perth?", a: "Yes. Aged care is a specific area of focus — our guards understand how to interact appropriately with elderly residents and their families while maintaining site security." },
       { q: "Can you patrol school and university campuses after hours?", a: "Yes. After-hours mobile patrols are one of the most common arrangements for schools and universities across Perth, providing cost-effective perimeter and campus coverage overnight and on weekends." },
-      { q: "Are your guards police checked for working with vulnerable people?", a: "Yes. All NexGuard officers undergo thorough police checks before deployment, which is mandatory for roles in healthcare and education environments." },
+      { q: "Are your guards background checked for roles involving vulnerable people?", a: "Yes. All NexGuard officers undergo thorough background screening before deployment. For roles in healthcare, aged care and education environments, additional checks are conducted as required by the facility and applicable regulations." },
       { q: "Do you provide security for medical centres and GP clinics?", a: "Yes. We cover a range of healthcare settings from major hospital campuses to smaller medical centres, specialist clinics and allied health facilities." },
     ],
     relatedServiceSlugs: ["static-guards", "mobile-patrols", "concierge-corporate-security", "alarm-response"],
@@ -307,7 +307,6 @@ export const industries: Industry[] = [
       { title: "Professional Corporate Presentation", desc: "Guards arrive in pressed NexGuard uniform, briefed on your building's protocols — representing your organisation with authority." },
       { title: "Visitor & Contractor Access Control", desc: "Structured visitor management including sign-in, ID checking, escort protocols and contractor access logs." },
       { title: "Confidentiality & Discretion", desc: "Our officers understand the sensitivity of government and corporate environments and operate with complete discretion." },
-      { title: "Compliance-Aligned Procedures", desc: "Security protocols designed to align with government procurement standards and corporate governance requirements." },
       { title: "Consistent Guard Assignment", desc: "The same security officer assigned to your building where possible — building familiarity with your team, tenants and protocols." },
       { title: "24/7 Operational Support", desc: "Our operations team is always reachable — providing immediate support and communication for any security matter." },
     ],
@@ -315,7 +314,7 @@ export const industries: Industry[] = [
       { value: "24/7", label: "Building Coverage" },
       { value: "100%", label: "Vetted & Licensed" },
       { value: "Perth", label: "CBD & Metro WA" },
-      { value: "GPS", label: "Tracked & Reported" },
+      { value: "Fast", label: "Incident Response" },
     ],
     faqs: [
       { q: "Can NexGuard provide security for government-owned buildings and facilities?", a: "Yes. We provide security for government buildings, local councils and public sector facilities across Perth WA, with procedures aligned to public sector requirements." },

@@ -11,7 +11,6 @@ import {
   CheckCircle2,
   ArrowRight,
   Phone,
-  Star,
   HardHat,
   ShoppingBag,
   HeartPulse,
@@ -22,7 +21,7 @@ import {
 export default function HomePage() {
   const industries = [
     { title: "Retail & Commercial", icon: ShoppingBag, slug: "retail-commercial" },
-    { title: "Construction & Mining", icon: HardHat, slug: "construction-mining" },
+    { title: "Construction & Industrial", icon: HardHat, slug: "construction-mining" },
     { title: "Events & Hospitality", icon: Siren, slug: "events-hospitality" },
     { title: "Healthcare & Education", icon: HeartPulse, slug: "healthcare-education" },
     { title: "Government & Corporate", icon: Landmark, slug: "government-corporate" },
@@ -36,26 +35,6 @@ export default function HomePage() {
     { value: "Fast", label: "Rapid Response Time" },
   ];
 
-  const testimonials = [
-    {
-      name: "James R.",
-      role: "Construction Project Manager",
-      text: "NexGuard has been protecting our construction sites across Perth for months. Professional, reliable and always on time. Highly recommended.",
-      stars: 5,
-    },
-    {
-      name: "Sarah M.",
-      role: "Event Organiser",
-      text: "We used NexGuard for crowd control at our annual gala. Their team was calm, professional and handled everything flawlessly.",
-      stars: 5,
-    },
-    {
-      name: "David K.",
-      role: "Retail Store Owner",
-      text: "Since hiring NexGuard for our store, theft has dropped significantly. Their guards are visible, proactive and great with customers.",
-      stars: 5,
-    },
-  ];
 
   return (
     <main id="main-content" className="bg-white dark:bg-[#020817] text-slate-900 dark:text-white">
@@ -248,7 +227,7 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               { title: "Fully Licensed WA Security Professionals", desc: "Every guard holds a current WA security licence — fully compliant and legally authorised." },
-              { title: "GPS Tracked Guards & Real-Time Reporting", desc: "Live tracking of all active guards with instant digital reports after every shift or incident." },
+              { title: "Detailed Shift & Incident Reporting", desc: "Digital reports delivered after every shift or incident — giving you full transparency and a clear record." },
               { title: "Tailored Security Plans for Every Client", desc: "No one-size-fits-all. We assess your site and build a plan around your specific needs." },
               { title: "Rapid Response — No Delays, No Excuses", desc: "We respond fast. When you call, we act — day or night, weekdays or weekends." },
               { title: "24/7 Operational Support & Communication", desc: "Our operations team is always reachable, keeping you informed around the clock." },
@@ -272,34 +251,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* COMMITMENT SECTION */}
       <section className="py-24 bg-white dark:bg-[#020817]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
           <div className="text-center max-w-2xl mx-auto mb-14">
             <p className="tracking-widest text-blue-600 dark:text-cyan-400 font-medium text-xs uppercase mb-4">
-              What Our Clients Say
+              Our Commitment
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white leading-snug">
-              Trusted by Businesses Across Perth
+              What You Can Expect From NexGuard
             </h2>
+            <p className="text-slate-500 dark:text-zinc-400 text-base mt-4">
+              Every client, every site, every shift — the same standard of professionalism.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((t, index) => (
+            {[
+              { title: "A Response, Not Just a Quote", desc: "When you contact us, you speak to someone who understands security — not a call centre. We assess your needs and come back with a real plan." },
+              { title: "Guards Who Know the Job", desc: "Every NexGuard officer is licensed, vetted and briefed on your site before their first shift. No generalists. No shortcuts." },
+              { title: "Full Transparency After Every Shift", desc: "You receive a written report after every shift or incident — so you always know exactly what happened on your site or at your event." },
+            ].map((item, index) => (
               <div key={index} className="bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 rounded-2xl p-7">
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: t.stars }).map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                  ))}
+                <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-600/10 border border-blue-100 dark:border-blue-500/20 mb-5 flex items-center justify-center">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-cyan-400" />
                 </div>
-                <p className="text-slate-600 dark:text-zinc-300 text-sm leading-relaxed mb-5">
-                  &ldquo;{t.text}&rdquo;
-                </p>
-                <div>
-                  <p className="font-bold text-slate-900 dark:text-white text-sm">{t.name}</p>
-                  <p className="text-slate-400 dark:text-zinc-500 text-xs mt-0.5">{t.role}</p>
-                </div>
+                <h3 className="font-bold text-slate-900 dark:text-white text-base mb-2">{item.title}</h3>
+                <p className="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
