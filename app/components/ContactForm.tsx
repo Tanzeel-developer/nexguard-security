@@ -46,7 +46,7 @@ export function ContactForm() {
             Message Sent!
           </h3>
           <p className="text-slate-500 dark:text-zinc-400 text-sm leading-relaxed">
-            Thank you for reaching out. Our team will get back to you within 2 hours.
+            Thank you for reaching out. Our team will get back to you shortly.
           </p>
         </div>
         <button
@@ -163,7 +163,7 @@ export function ContactForm() {
           )}
         </button>
         <p className="text-xs text-center text-slate-400 dark:text-zinc-500 mt-3">
-          We respond within 2 hours. Available 24/7 for urgent enquiries.
+          We respond promptly. Available 24/7 for urgent enquiries.
         </p>
       </div>
     </form>

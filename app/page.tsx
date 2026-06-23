@@ -60,7 +60,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-slate-300 text-base leading-relaxed mb-10">
-              The best security isn&apos;t what reacts, it&apos;s what prevents. NexGuard Protection delivers experienced, professional security guards across Western Australia, protecting businesses, people and assets with professionalism, integrity and unmatched reliability.
+              The best security isn&apos;t what reacts, it&apos;s what prevents. NexGuard Protection delivers experienced, professional security guards across Western Australia, protecting businesses, people and assets with professionalism, integrity and reliability.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -88,7 +88,7 @@ export default function HomePage() {
               { label: "Fully Licensed", sub: "WA Security Licence Holders" },
               { label: "Police Checked", sub: "All Guards Vetted & Cleared" },
               { label: "Fully Insured", sub: "Complete Liability Coverage" },
-              { label: "24/7 Response", sub: "Always On Call for You" },
+              { label: "24/7 Response", sub: "On Call Around the Clock" },
             ].map((item, index) => (
               <div key={index} className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl p-5 flex items-center gap-4">
                 <ShieldCheck className="w-7 h-7 text-cyan-400 shrink-0" />
@@ -229,8 +229,8 @@ export default function HomePage() {
               { title: "Fully Licensed WA Security Professionals", desc: "Every guard holds a current WA security licence — fully compliant and legally authorised." },
               { title: "Detailed Shift & Incident Reporting", desc: "Digital reports delivered after every shift or incident — giving you full transparency and a clear record." },
               { title: "Tailored Security Plans for Every Client", desc: "No one-size-fits-all. We assess your site and build a plan around your specific needs." },
-              { title: "Rapid Response — No Delays, No Excuses", desc: "We respond fast. When you call, we act — day or night, weekdays or weekends." },
-              { title: "24/7 Operational Support & Communication", desc: "Our operations team is always reachable, keeping you informed around the clock." },
+              { title: "Reliable Response, Day or Night", desc: "We take every call seriously. When you need us, we act — day or night, weekdays or weekends." },
+              { title: "24/7 Operational Support & Communication", desc: "Our operations team is reachable around the clock, keeping you informed when it matters." },
               { title: "Perth-Based Team with Local Knowledge", desc: "We know Perth. Our local expertise means smarter security decisions for your area." },
             ].map((item, index) => (
               <div
@@ -270,8 +270,8 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { title: "A Response, Not Just a Quote", desc: "When you contact us, you speak to someone who understands security — not a call centre. We assess your needs and come back with a real plan." },
-              { title: "Guards Who Know the Job", desc: "Every NexGuard officer is licensed, vetted and briefed on your site before their first shift. No generalists. No shortcuts." },
-              { title: "Full Transparency After Every Shift", desc: "You receive a written report after every shift or incident — so you always know exactly what happened on your site or at your event." },
+              { title: "Guards Who Know the Job", desc: "Our officers are licensed, vetted and briefed on your site's requirements prior to deployment. Professional standards, every engagement." },
+              { title: "Transparent Shift & Incident Reporting", desc: "We provide written reports after shifts and incidents — so you have a clear record of activity on your site or at your event." },
             ].map((item, index) => (
               <div key={index} className="bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 rounded-2xl p-7">
                 <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-600/10 border border-blue-100 dark:border-blue-500/20 mb-5 flex items-center justify-center">
@@ -327,7 +327,7 @@ export default function HomePage() {
               Request a Free Quote
             </h2>
             <p className="text-slate-500 dark:text-zinc-400 text-base mt-4">
-              Fill out the form below and our team will get back to you within 2 hours.
+              Fill out the form below and our team will be in touch shortly.
             </p>
           </div>
 

@@ -377,7 +377,7 @@ export default async function IndustryPage({ params }: Props) {
                 <span className="text-blue-600 dark:text-blue-400">{industry.title}</span>
               </h2>
               <p className="text-slate-500 dark:text-zinc-400 text-base leading-relaxed mb-8">
-                Tell us about your {industry.title.toLowerCase().split(" ")[0]} and we&apos;ll provide a tailored security proposal within 2 hours. No obligation. No lock-in contracts.
+                Tell us about your {industry.title.toLowerCase().split(" ")[0]} and we&apos;ll provide a tailored security proposal. No obligation. No lock-in contracts.
               </p>
 
               <div className="space-y-4">
@@ -385,7 +385,7 @@ export default async function IndustryPage({ params }: Props) {
                   { label: "Free Security Assessment", sub: "We assess your site and risks at no cost" },
                   { label: "Tailored Security Plan", sub: "Built specifically for your industry and site" },
                   { label: "Transparent Pricing", sub: "No hidden fees, no surprises on your invoice" },
-                  { label: "Fast Deployment", sub: "Guards on-site often within days of agreement" },
+                  { label: "Fast Deployment", sub: "Guards deployed promptly once your agreement is in place" },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-600/10 border border-blue-100 dark:border-blue-500/20 flex items-center justify-center shrink-0">

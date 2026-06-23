@@ -86,7 +86,7 @@ export const services: Service[] = [
     heroTagline: "Mobile Patrol Security Perth",
     intro: [
       "A visible, unpredictable security presence is one of the most effective deterrents against break-ins, vandalism and trespassing. NexGuard Protection's mobile patrol service provides marked patrol vehicles conducting random or scheduled checks across Perth and Western Australia — covering commercial premises, construction sites, retail centres, industrial estates and residential complexes.",
-      "Our patrol officers don't just drive past — every visit includes a full perimeter check, lock and access point inspection, and a written report. Because patrol times are randomised, would-be intruders can never predict when a guard will arrive, making mobile patrols one of the most cost-effective security solutions available.",
+      "Our patrol officers don't just drive past — every visit includes a full perimeter check, lock and access point inspection, and a written report. Because patrol times are randomised, it becomes significantly harder for would-be intruders to predict guard movements — making mobile patrols one of the most cost-effective security solutions available.",
     ],
     benefits: [
       { title: "Cost-Effective Coverage", desc: "Protect multiple properties or a large site without the cost of a full-time static guard." },
@@ -132,7 +132,7 @@ export const services: Service[] = [
     benefits: [
       { title: "Constant Visible Presence", desc: "A stationed guard is the strongest possible deterrent against theft, trespassing and disorderly behaviour." },
       { title: "Access Control", desc: "Guards manage entry and exit, checking credentials and maintaining visitor logs." },
-      { title: "Immediate Response", desc: "Being on-site means incidents are addressed the moment they happen, not after a delay." },
+      { title: "On-Site Incident Response", desc: "Being permanently stationed on your site means incidents are identified and responded to promptly." },
       { title: "Site-Specific Training", desc: "Every guard is briefed on your property's specific procedures, emergency plans and points of contact." },
       { title: "Professional Presentation", desc: "Guards in branded NexGuard uniform present a professional, reassuring image to staff and visitors." },
       { title: "Flexible Shift Lengths", desc: "From single shifts to full 24/7 rostered coverage, tailored to your needs." },
@@ -253,7 +253,7 @@ export const services: Service[] = [
       "We work with your existing alarm monitoring provider or directly with you to ensure a rapid, professional response any time an activation occurs, giving property owners and businesses confidence that their site is protected even when no one is on-site.",
     ],
     benefits: [
-      { title: "Rapid Dispatch", desc: "Guards are dispatched the moment an alarm activation is received — no delays, no excuses." },
+      { title: "Rapid Dispatch", desc: "Guards are dispatched promptly on receiving an alarm activation, with response times subject to guard location and conditions." },
       { title: "24/7 Availability", desc: "Our alarm response service operates around the clock, every day of the year." },
       { title: "Thorough Site Checks", desc: "Every response includes a full property check to confirm whether the activation was a genuine incident." },
       { title: "Direct Reporting", desc: "You receive immediate notification of findings after every response." },

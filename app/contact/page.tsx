@@ -118,7 +118,7 @@ export default function ContactPage() {
                 Request a Free Quote
               </h2>
               <p className="text-slate-500 dark:text-zinc-400 text-base">
-                Fill out the form below and our team will get back to you within 2 hours.
+                Fill out the form below and our team will get back to you shortly.
               </p>
             </div>
             <ContactForm />
